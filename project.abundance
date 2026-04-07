@@ -1416,6 +1416,19 @@
       },
       "unitsKey": "Unitless",
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Color",
+      "x": 0.6689847009735744,
+      "y": 0.36645962732919257,
+      "uniqueID": "id-219",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "selectedColor": "Orange"
     }
   ],
   "allConnectors": [
@@ -1423,6 +1436,16 @@
       "ap2Name": "InputShape",
       "ap1ID": "id-19",
       "ap2ID": "id-201"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-59",
+      "ap2ID": "id-219"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-219",
+      "ap2ID": "id-2"
     }
   ],
   "unitsKey": "MM",
