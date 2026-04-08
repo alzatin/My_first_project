@@ -20,7 +20,7 @@
     },
     {
       "atomType": "Code",
-      "x": 0.5046335299073293,
+      "x": 0.506318449873631,
       "y": 0.20186335403726707,
       "uniqueID": "id-387",
       "ioValues": [
@@ -83,8 +83,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.7413647851727043,
-      "y": 0.35714285714285715,
+      "x": 0.7312552653748947,
+      "y": 0.34782608695652173,
       "uniqueID": "id-416",
       "ioValues": [
         {
@@ -99,8 +99,8 @@
     },
     {
       "atomType": "Tag",
-      "x": 0.7127211457455771,
-      "y": 0.84472049689441,
+      "x": 0.7135636057287279,
+      "y": 0.8354037267080745,
       "uniqueID": "id-421",
       "name": "box",
       "ioValues": [
@@ -115,8 +115,8 @@
     },
     {
       "atomType": "ExtractTag",
-      "x": 0.8416175231676496,
-      "y": 0.2732919254658385,
+      "x": 0.8407750631844987,
+      "y": 0.2701863354037267,
       "uniqueID": "id-424",
       "name": "Extract Tag",
       "ioValues": [
@@ -163,6 +163,36 @@
           "ioValue": 10
         }
       ]
+    },
+    {
+      "atomType": "Export",
+      "x": 0.8331929233361415,
+      "y": 0.5900621118012422,
+      "uniqueID": "id-1425",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STL",
+          "currentEquation": "STL"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "My_first_project",
+          "currentEquation": "My_first_project"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "My_first_project"
     }
   ],
   "allConnectors": [
@@ -185,6 +215,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-416",
       "ap2ID": "id-424"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-416",
+      "ap2ID": "id-1425"
     },
     {
       "ap2Name": "Shape 1",
