@@ -20,34 +20,6 @@
     },
     {
       "atomType": "Code",
-      "x": 0.3125526537489469,
-      "y": 0.3012422360248447,
-      "uniqueID": "id-378",
-      "ioValues": [
-        {
-          "name": "diameter",
-          "ioValue": 5,
-          "currentEquation": "5"
-        },
-        {
-          "name": "length",
-          "ioValue": 10,
-          "currentEquation": "10"
-        },
-        {
-          "name": "pitch",
-          "ioValue": 2
-        },
-        {
-          "name": "threadDepth",
-          "ioValue": 0.6
-        }
-      ],
-      "codeVersion": 1,
-      "code": "const Inputs = [\n  { inputName: \"diameter\", type: \"number\", defaultValue: 10 },\n  { inputName: \"length\", type: \"number\", defaultValue: 30 },\n  { inputName: \"pitch\", type: \"number\", defaultValue: 2 },\n  { inputName: \"threadDepth\", type: \"number\", defaultValue: 0.6 }\n];\n\nconst radius = diameter / 2;\nconst coreRadius = radius - threadDepth;\n\n// Main shaft cylinder\nlet shaft = replicad.drawCircle(coreRadius)\n  .sketchOnPlane()\n  .extrude(length);\n\n// Helical path for threading: makeHelix(pitch, height, radius)\nlet helixPath = replicad.makeHelix(pitch, length, radius);\n\n// Triangular thread profile (in the XZ plane)\nlet threadProfile = replicad.draw()\n  .movePointerTo([coreRadius, 0])\n  .lineTo([radius, pitch / 2])\n  .lineTo([coreRadius, pitch])\n  .close();\n\n// Sweep the profile along the helix to create the thread\nlet thread = threadProfile.sketchOnPlane(\"XZ\").sweepSketch(\n  (plane) => replicad.draw()\n    .movePointerTo([coreRadius, 0])\n    .lineTo([radius, pitch / 2])\n    .lineTo([coreRadius, pitch])\n    .close()\n    .sketchOnPlane(plane),\n  helixPath\n);\n\n// Fuse shaft and thread together\nlet screw = shaft.fuse(thread);\n\nreturn {\n  geometry: [screw],\n  dimension: \"3D\",\n  tags: [\"screw\"],\n  color: \"#8a8a8a\",\n  plane: null,\n  bom: []\n};"
-    },
-    {
-      "atomType": "Code",
       "x": 0.5046335299073293,
       "y": 0.20186335403726707,
       "uniqueID": "id-387",
@@ -75,19 +47,6 @@
       ],
       "codeVersion": 1,
       "code": "const Inputs = [\n  { inputName: \"diameter\", type: \"number\", defaultValue: 10 },\n  { inputName: \"length\", type: \"number\", defaultValue: 30 },\n  { inputName: \"pitch\", type: \"number\", defaultValue: 2 },\n  { inputName: \"toothSide\", type: \"number\", defaultValue: 0.6 }\n];\n\nconst innerRadius = diameter / 2;\n\n// Draw the thread profile: a triangle swept along a helix\nconst drawProfile = (plane, origin) => {\n  const originPlane = new replicad.Plane(origin, [0, 0, -1], plane.zDir);\n  return replicad.draw()\n    .hLine(-toothSide)\n    .polarLine(toothSide, 60)\n    .close()\n    .sketchOnPlane(originPlane);\n};\n\nconst threadHelix = replicad.sketchHelix(\n  pitch,\n  length,\n  innerRadius,\n  [0, 0, 0],\n  [0, 0, 1],\n  false\n);\n\nconst thread = threadHelix.sweepSketch(drawProfile, { frenet: true });\n\n// Main cylinder shaft - rotate 2 degrees to avoid seam collision with thread start\nconst shaft = replicad.makeCylinder(innerRadius, length + 3).rotate(2);\n\n// Fuse with sameFace optimisation to prevent kernel errors at the junction\nconst screw = shaft.fuse(thread, { optimisation: \"sameFace\" });\n\nreturn {\n  geometry: [screw],\n  dimension: \"3D\",\n  tags: [\"screw\"],\n  color: \"#8a8a8a\",\n  plane: null,\n  bom: []\n};"
-    },
-    {
-      "atomType": "Circle",
-      "x": 0.37152485256950296,
-      "y": 0.5186335403726707,
-      "uniqueID": "id-401",
-      "ioValues": [
-        {
-          "name": "diameter",
-          "ioValue": 4,
-          "currentEquation": "4"
-        }
-      ]
     },
     {
       "atomType": "Rectangle",
@@ -194,17 +153,13 @@
       ]
     },
     {
-      "atomType": "Rectangle",
-      "x": 0.2426284751474305,
-      "y": 0.5559006211180124,
-      "uniqueID": "id-1414",
+      "atomType": "Circle",
+      "x": 0.48188711036225784,
+      "y": 0.4472049689440994,
+      "uniqueID": "id-1418",
       "ioValues": [
         {
-          "name": "x length",
-          "ioValue": 10
-        },
-        {
-          "name": "y length",
+          "name": "diameter",
           "ioValue": 10
         }
       ]
