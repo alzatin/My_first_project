@@ -46,8 +46,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.454798331015299,
-      "y": 0.6583850931677019,
+      "x": 0.13784021071115013,
+      "y": 0.6417910447761194,
       "uniqueID": "id-404",
       "ioValues": [
         {
@@ -62,8 +62,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.5686604886267902,
-      "y": 0.6770186335403726,
+      "x": 0.40913081650570676,
+      "y": 0.4,
       "uniqueID": "id-408",
       "ioValues": [
         {
@@ -179,14 +179,13 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.2858136300417246,
-      "y": 0.4503105590062112,
+      "x": 0.15188762071992976,
+      "y": 0.3731343283582089,
       "uniqueID": "id-1418",
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 7,
-          "currentEquation": "7"
+          "ioValue": 7
         }
       ]
     }
@@ -196,11 +195,6 @@
       "ap2Name": "Shape 2",
       "ap1ID": "id-387",
       "ap2ID": "id-416"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-404",
-      "ap2ID": "id-408"
     },
     {
       "ap2Name": "geometry",
@@ -226,6 +220,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-427",
       "ap2ID": "id-421"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-1418",
+      "ap2ID": "id-408"
     }
   ],
   "unitsKey": "MM",
