@@ -4,6 +4,12 @@
   "y": 0,
   "uniqueID": "id-1",
   "name": "My_first_project",
+  "ioValues": [
+    {
+      "name": "Mishmish",
+      "ioValue": 10
+    }
+  ],
   "topLevel": true,
   "allAtoms": [
     {
@@ -20,8 +26,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.5076495132127955,
-      "y": 0.19875776397515527,
+      "x": 0.5083449235048679,
+      "y": 0.20496894409937888,
       "uniqueID": "id-387",
       "ioValues": [
         {
@@ -46,13 +52,13 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.13784021071115013,
-      "y": 0.6417910447761194,
+      "x": 0.23992673992673996,
+      "y": 0.7298136645962733,
       "uniqueID": "id-404",
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 39
+          "ioValue": 10
         },
         {
           "name": "y length",
@@ -78,24 +84,20 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.7348551360842845,
-      "y": 0.3701492537313433,
+      "x": 0.6959706959706959,
+      "y": 0.406832298136646,
       "uniqueID": "id-416",
       "ioValues": [
         {
           "name": "Shape 1",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 2",
           "ioValue": null
         }
       ]
     },
     {
       "atomType": "Tag",
-      "x": 0.655838454784899,
-      "y": 0.5940298507462687,
+      "x": 0.6327838827838828,
+      "y": 0.65527950310559,
       "uniqueID": "id-421",
       "name": "box",
       "ioValues": [
@@ -125,8 +127,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.5408252853380158,
-      "y": 0.5522388059701493,
+      "x": 0.49267399267399264,
+      "y": 0.5403726708074534,
       "uniqueID": "id-427",
       "ioValues": [
         {
@@ -179,23 +181,25 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.15627743634767338,
-      "y": 0.3552238805970149,
+      "x": 0.260778859527121,
+      "y": 0.36645962732919257,
       "uniqueID": "id-1418",
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 7
+          "ioValue": 10
         }
       ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.4409937888198758,
+      "uniqueID": "id-1462",
+      "name": "Mishmish"
     }
   ],
   "allConnectors": [
-    {
-      "ap2Name": "Shape 2",
-      "ap1ID": "id-387",
-      "ap2ID": "id-416"
-    },
     {
       "ap2Name": "geometry",
       "ap1ID": "id-408",
@@ -225,6 +229,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-1418",
       "ap2ID": "id-408"
+    },
+    {
+      "ap2Name": "diameter",
+      "ap1ID": "id-1462",
+      "ap2ID": "id-1418"
     }
   ],
   "unitsKey": "MM",
