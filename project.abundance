@@ -20,17 +20,19 @@
     },
     {
       "atomType": "Code",
-      "x": 0.36731255265374896,
-      "y": 0.562111801242236,
+      "x": 0.3100252737994945,
+      "y": 0.30434782608695654,
       "uniqueID": "id-378",
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 5
+          "ioValue": 5,
+          "currentEquation": "5"
         },
         {
           "name": "length",
-          "ioValue": 10
+          "ioValue": 10,
+          "currentEquation": "10"
         },
         {
           "name": "pitch",
@@ -46,14 +48,13 @@
     },
     {
       "atomType": "Code",
-      "x": 0.5139005897219882,
-      "y": 0.20186335403726707,
+      "x": 0.5105307497893851,
+      "y": 0.18012422360248448,
       "uniqueID": "id-387",
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 10,
-          "currentEquation": "10"
+          "ioValue": 10
         },
         {
           "name": "length",
@@ -61,13 +62,11 @@
         },
         {
           "name": "pitch",
-          "ioValue": 8,
-          "currentEquation": "8"
+          "ioValue": 8
         },
         {
           "name": "toothSide",
-          "ioValue": 2,
-          "currentEquation": "2"
+          "ioValue": 2
         }
       ],
       "codeVersion": 1,
@@ -75,14 +74,14 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.43218197135636055,
-      "y": 0.38819875776397517,
+      "x": 0.43470935130581295,
+      "y": 0.43788819875776397,
       "uniqueID": "id-401",
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 4,
-          "currentEquation": "4"
+          "ioValue": 5,
+          "currentEquation": "5"
         }
       ]
     },
@@ -114,8 +113,7 @@
         },
         {
           "name": "height",
-          "ioValue": 10,
-          "currentEquation": "10"
+          "ioValue": 10
         }
       ]
     },
@@ -186,10 +184,33 @@
         },
         {
           "name": "zDist",
-          "ioValue": 3,
-          "currentEquation": "3"
+          "ioValue": 3
         }
       ]
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.34540859309182814,
+      "y": 0.5652173913043479,
+      "uniqueID": "id-679",
+      "name": "Github Molecule",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-681",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
