@@ -4,12 +4,6 @@
   "y": 0,
   "uniqueID": "id-1",
   "name": "My_first_project",
-  "ioValues": [
-    {
-      "name": "Mishmish",
-      "ioValue": 10
-    }
-  ],
   "topLevel": true,
   "allAtoms": [
     {
@@ -25,40 +19,14 @@
       ]
     },
     {
-      "atomType": "Code",
-      "x": 0.5083449235048679,
-      "y": 0.20496894409937888,
-      "uniqueID": "id-387",
-      "ioValues": [
-        {
-          "name": "diameter",
-          "ioValue": 10
-        },
-        {
-          "name": "length",
-          "ioValue": 30
-        },
-        {
-          "name": "pitch",
-          "ioValue": 8
-        },
-        {
-          "name": "toothSide",
-          "ioValue": 2
-        }
-      ],
-      "codeVersion": 1,
-      "code": "const Inputs = [\n  { inputName: \"diameter\", type: \"number\", defaultValue: 10 },\n  { inputName: \"length\", type: \"number\", defaultValue: 30 },\n  { inputName: \"pitch\", type: \"number\", defaultValue: 2 },\n  { inputName: \"toothSide\", type: \"number\", defaultValue: 0.6 }\n];\n\nconst innerRadius = diameter / 2;\n\n// Draw the thread profile: a triangle swept along a helix\nconst drawProfile = (plane, origin) => {\n  const originPlane = new replicad.Plane(origin, [0, 0, -1], plane.zDir);\n  return replicad.draw()\n    .hLine(-toothSide)\n    .polarLine(toothSide, 60)\n    .close()\n    .sketchOnPlane(originPlane);\n};\n\nconst threadHelix = replicad.sketchHelix(\n  pitch,\n  length,\n  innerRadius,\n  [0, 0, 0],\n  [0, 0, 1],\n  false\n);\n\nconst thread = threadHelix.sweepSketch(drawProfile, { frenet: true });\n\n// Main cylinder shaft - rotate 2 degrees to avoid seam collision with thread start\nconst shaft = replicad.makeCylinder(innerRadius, length + 3).rotate(2);\n\n// Fuse with sameFace optimisation to prevent kernel errors at the junction\nconst screw = shaft.fuse(thread, { optimisation: \"sameFace\" });\n\nreturn {\n  geometry: [screw],\n  dimension: \"3D\",\n  tags: [\"screw\"],\n  color: \"#8a8a8a\",\n  plane: null,\n  bom: []\n};"
-    },
-    {
       "atomType": "Rectangle",
-      "x": 0.23992673992673996,
-      "y": 0.7298136645962733,
+      "x": 0.13784021071115013,
+      "y": 0.6417910447761194,
       "uniqueID": "id-404",
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 10
+          "ioValue": 39
         },
         {
           "name": "y length",
@@ -67,25 +35,9 @@
       ]
     },
     {
-      "atomType": "Extrude",
-      "x": 0.36698858647936783,
-      "y": 0.42686567164179107,
-      "uniqueID": "id-408",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "height",
-          "ioValue": 10
-        }
-      ]
-    },
-    {
       "atomType": "Assembly",
-      "x": 0.6959706959706959,
-      "y": 0.406832298136646,
+      "x": 0.7348551360842845,
+      "y": 0.3701492537313433,
       "uniqueID": "id-416",
       "ioValues": [
         {
@@ -96,8 +48,8 @@
     },
     {
       "atomType": "Tag",
-      "x": 0.6327838827838828,
-      "y": 0.65527950310559,
+      "x": 0.655838454784899,
+      "y": 0.5940298507462687,
       "uniqueID": "id-421",
       "name": "box",
       "ioValues": [
@@ -127,8 +79,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.49267399267399264,
-      "y": 0.5403726708074534,
+      "x": 0.5408252853380158,
+      "y": 0.5522388059701493,
       "uniqueID": "id-427",
       "ioValues": [
         {
@@ -180,31 +132,35 @@
       "partName": "My_first_project"
     },
     {
-      "atomType": "Circle",
-      "x": 0.260778859527121,
-      "y": 0.36645962732919257,
-      "uniqueID": "id-1418",
+      "atomType": "Extrude",
+      "x": 0.3775241439859526,
+      "y": 0.4388059701492537,
+      "uniqueID": "id-408",
       "ioValues": [
         {
-          "name": "diameter",
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
           "ioValue": 10
         }
       ]
     },
     {
-      "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.4409937888198758,
-      "uniqueID": "id-1462",
-      "name": "Mishmish"
+      "atomType": "Circle",
+      "x": 0.17295873573309922,
+      "y": 0.5044776119402985,
+      "uniqueID": "id-1467",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 9
+        }
+      ]
     }
   ],
   "allConnectors": [
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-408",
-      "ap2ID": "id-427"
-    },
     {
       "ap2Name": "geometry",
       "ap1ID": "id-416",
@@ -227,13 +183,13 @@
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-1418",
-      "ap2ID": "id-408"
+      "ap1ID": "id-408",
+      "ap2ID": "id-427"
     },
     {
-      "ap2Name": "diameter",
-      "ap1ID": "id-1462",
-      "ap2ID": "id-1418"
+      "ap2Name": "geometry",
+      "ap1ID": "id-1467",
+      "ap2ID": "id-408"
     }
   ],
   "unitsKey": "MM",
