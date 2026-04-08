@@ -20,29 +20,25 @@
     },
     {
       "atomType": "Code",
-      "x": 0.506318449873631,
-      "y": 0.20186335403726707,
+      "x": 0.5076495132127955,
+      "y": 0.19875776397515527,
       "uniqueID": "id-387",
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 10,
-          "currentEquation": "10"
+          "ioValue": 10
         },
         {
           "name": "length",
-          "ioValue": 30,
-          "currentEquation": "30"
+          "ioValue": 30
         },
         {
           "name": "pitch",
-          "ioValue": 8,
-          "currentEquation": "8"
+          "ioValue": 8
         },
         {
           "name": "toothSide",
-          "ioValue": 2,
-          "currentEquation": "2"
+          "ioValue": 2
         }
       ],
       "codeVersion": 1,
@@ -50,14 +46,13 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.47514743049705144,
-      "y": 0.7639751552795032,
+      "x": 0.454798331015299,
+      "y": 0.6583850931677019,
       "uniqueID": "id-404",
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 40,
-          "currentEquation": "40"
+          "ioValue": 39
         },
         {
           "name": "y length",
@@ -153,18 +148,6 @@
       ]
     },
     {
-      "atomType": "Circle",
-      "x": 0.48188711036225784,
-      "y": 0.4472049689440994,
-      "uniqueID": "id-1418",
-      "ioValues": [
-        {
-          "name": "diameter",
-          "ioValue": 10
-        }
-      ]
-    },
-    {
       "atomType": "Export",
       "x": 0.8331929233361415,
       "y": 0.5900621118012422,
@@ -193,6 +176,19 @@
       "resolution": 96,
       "importIndex": 0,
       "partName": "My_first_project"
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.2858136300417246,
+      "y": 0.4503105590062112,
+      "uniqueID": "id-1418",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 7,
+          "currentEquation": "7"
+        }
+      ]
     }
   ],
   "allConnectors": [
