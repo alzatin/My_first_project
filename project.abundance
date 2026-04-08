@@ -71,7 +71,7 @@
         }
       ],
       "codeVersion": 1,
-      "code": "const Inputs = [\n  { inputName: \"diameter\", type: \"number\", defaultValue: 10 },\n  { inputName: \"length\", type: \"number\", defaultValue: 30 },\n  { inputName: \"pitch\", type: \"number\", defaultValue: 2 },\n  { inputName: \"toothSide\", type: \"number\", defaultValue: 0.6 }\n];\n\nconst innerRadius = diameter / 2;\n\n// Draw the thread profile: a triangle swept along a helix\nconst drawProfile = (plane, origin) => {\n  const originPlane = new replicad.Plane(origin, [0, 0, -1], plane.zDir);\n  return replicad.draw()\n    .hLine(-toothSide)\n    .polarLine(toothSide, 60)\n    .close()\n    .sketchOnPlane(originPlane);\n};\n\nconst threadHelix = replicad.sketchHelix(\n  pitch,\n  length,\n  innerRadius,\n  [0, 0, 0],\n  [0, 0, 1],\n  false\n);\n\nconst thread = threadHelix.sweepSketch(drawProfile, { frenet: true });\n\n// Main cylinder shaft - rotate 2 degrees to avoid seam collision with thread start\nconst shaft = replicad.makeCylinder(innerRadius, length).rotate(2);\n\n// Fuse with sameFace optimisation to prevent kernel errors at the junction\nconst screw = shaft.fuse(thread, { optimisation: \"sameFace\" });\n\nreturn {\n  geometry: [screw],\n  dimension: \"3D\",\n  tags: [\"screw\"],\n  color: \"#8a8a8a\",\n  plane: null,\n  bom: []\n};"
+      "code": "const Inputs = [\n  { inputName: \"diameter\", type: \"number\", defaultValue: 10 },\n  { inputName: \"length\", type: \"number\", defaultValue: 30 },\n  { inputName: \"pitch\", type: \"number\", defaultValue: 2 },\n  { inputName: \"toothSide\", type: \"number\", defaultValue: 0.6 }\n];\n\nconst innerRadius = diameter / 2;\n\n// Draw the thread profile: a triangle swept along a helix\nconst drawProfile = (plane, origin) => {\n  const originPlane = new replicad.Plane(origin, [0, 0, -1], plane.zDir);\n  return replicad.draw()\n    .hLine(-toothSide)\n    .polarLine(toothSide, 60)\n    .close()\n    .sketchOnPlane(originPlane);\n};\n\nconst threadHelix = replicad.sketchHelix(\n  pitch,\n  length,\n  innerRadius,\n  [0, 0, 0],\n  [0, 0, 1],\n  false\n);\n\nconst thread = threadHelix.sweepSketch(drawProfile, { frenet: true });\n\n// Main cylinder shaft - rotate 2 degrees to avoid seam collision with thread start\nconst shaft = replicad.makeCylinder(innerRadius, length + 3).rotate(2);\n\n// Fuse with sameFace optimisation to prevent kernel errors at the junction\nconst screw = shaft.fuse(thread, { optimisation: \"sameFace\" });\n\nreturn {\n  geometry: [screw],\n  dimension: \"3D\",\n  tags: [\"screw\"],\n  color: \"#8a8a8a\",\n  plane: null,\n  bom: []\n};"
     },
     {
       "atomType": "Circle",
@@ -121,8 +121,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.6781802864363943,
-      "y": 0.2236024844720497,
+      "x": 0.7413647851727043,
+      "y": 0.35714285714285715,
       "uniqueID": "id-416",
       "ioValues": [
         {
@@ -153,8 +153,8 @@
     },
     {
       "atomType": "ExtractTag",
-      "x": 0.839932603201348,
-      "y": 0.3136645962732919,
+      "x": 0.8416175231676496,
+      "y": 0.2732919254658385,
       "uniqueID": "id-424",
       "name": "Extract Tag",
       "ioValues": [
