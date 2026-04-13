@@ -4,12 +4,6 @@
   "y": 0,
   "uniqueID": "id-1",
   "name": "My_first_project",
-  "ioValues": [
-    {
-      "name": "Input",
-      "ioValue": 10
-    }
-  ],
   "topLevel": true,
   "allAtoms": [
     {
@@ -25,15 +19,9 @@
       ]
     },
     {
-      "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.4603658536585366,
-      "uniqueID": "id-1653"
-    },
-    {
       "atomType": "Circle",
-      "x": 0.2557510148849797,
-      "y": 0.20121951219512196,
+      "x": 0.2604871447902571,
+      "y": 0.3048780487804878,
       "uniqueID": "id-1656",
       "ioValues": [
         {
@@ -44,8 +32,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.3437077131258457,
-      "y": 0.4207317073170732,
+      "x": 0.3761840324763194,
+      "y": 0.41463414634146345,
       "uniqueID": "id-1670",
       "name": "-6-Wood-Screw-inches",
       "ioValues": [
