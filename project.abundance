@@ -20,8 +20,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.2604871447902571,
-      "y": 0.3048780487804878,
+      "x": 0.2259810554803789,
+      "y": 0.47865853658536583,
       "uniqueID": "id-1656",
       "ioValues": [
         {
@@ -32,14 +32,15 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.3761840324763194,
-      "y": 0.41463414634146345,
+      "x": 0.45534506089309873,
+      "y": 0.2530487804878049,
       "uniqueID": "id-1670",
       "name": "-6-Wood-Screw-inches",
       "ioValues": [
         {
           "name": "Length",
-          "ioValue": 0.5
+          "ioValue": 10,
+          "currentEquation": "10"
         }
       ],
       "topLevel": false,
@@ -197,7 +198,7 @@
             },
             {
               "name": "height",
-              "ioValue": -0.5,
+              "ioValue": -10,
               "currentEquation": "-Length"
             }
           ]
