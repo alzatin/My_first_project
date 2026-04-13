@@ -148,7 +148,7 @@
     },
     {
       "atomType": "Label",
-      "x": 0.8207008964955175,
+      "x": 0.8231458842705787,
       "y": 0.323170731707317,
       "uniqueID": "id-2381",
       "ioValues": [
@@ -158,8 +158,8 @@
         },
         {
           "name": "text",
-          "ioValue": "label",
-          "currentEquation": "label"
+          "ioValue": "lo",
+          "currentEquation": "lo"
         },
         {
           "name": "startPosition",
@@ -350,7 +350,7 @@
       "ap2ID": "id-2341"
     }
   ],
-  "unitsKey": "MM",
+  "unitsKey": "Inches",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
 }
