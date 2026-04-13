@@ -50,8 +50,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.43775372124492556,
-      "y": 0.1798780487804878,
+      "x": 0.43843031123139375,
+      "y": 0.1951219512195122,
       "uniqueID": "id-1508",
       "ioValues": [
         {
@@ -452,8 +452,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.47361299052774025,
-      "y": 0.8871951219512195,
+      "x": 0.571041948579161,
+      "y": 0.8810975609756097,
       "uniqueID": "id-1575",
       "ioValues": [
         {
@@ -536,8 +536,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.7638700947225981,
-      "y": 0.41158536585365857,
+      "x": 0.7347767253044655,
+      "y": 0.3475609756097561,
       "uniqueID": "id-1628",
       "ioValues": [
         {
@@ -547,13 +547,17 @@
         {
           "name": "Shape 3",
           "ioValue": null
+        },
+        {
+          "name": "Shape 4",
+          "ioValue": null
         }
       ]
     },
     {
       "atomType": "Fusion",
-      "x": 0.6278755074424899,
-      "y": 0.5579268292682927,
+      "x": 0.611637347767253,
+      "y": 0.5182926829268293,
       "uniqueID": "id-1633",
       "ioValues": [
         {
@@ -612,6 +616,68 @@
         }
       ],
       "unionType": "Fusion"
+    },
+    {
+      "atomType": "Tag",
+      "x": 0.6136671177266577,
+      "y": 0.23170731707317072,
+      "uniqueID": "id-1639",
+      "name": "bottom",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tags": [
+        "bottom"
+      ]
+    },
+    {
+      "atomType": "ExtractTag",
+      "x": 0.8362652232746955,
+      "y": 0.22560975609756098,
+      "uniqueID": "id-1642",
+      "name": "Extract Tag",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tag": "bottom",
+      "tagIndex": 0
+    },
+    {
+      "atomType": "Tag",
+      "x": 0.6772665764546685,
+      "y": 0.7469512195121951,
+      "uniqueID": "id-1646",
+      "name": "screw",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tags": [
+        "screw"
+      ]
+    },
+    {
+      "atomType": "ExtractTag",
+      "x": 0.831529093369418,
+      "y": 0.7164634146341463,
+      "uniqueID": "id-1649",
+      "name": "Extract Tag",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tag": "screw",
+      "tagIndex": 0
     }
   ],
   "allConnectors": [
@@ -621,9 +687,9 @@
       "ap2ID": "id-1508"
     },
     {
-      "ap2Name": "Shape 2",
+      "ap2Name": "geometry",
       "ap1ID": "id-1508",
-      "ap2ID": "id-1628"
+      "ap2ID": "id-1639"
     },
     {
       "ap2Name": "geometry",
@@ -647,6 +713,11 @@
     },
     {
       "ap2Name": "geometry",
+      "ap1ID": "id-1575",
+      "ap2ID": "id-1646"
+    },
+    {
+      "ap2Name": "geometry",
       "ap1ID": "id-1605",
       "ap2ID": "id-1609"
     },
@@ -661,8 +732,28 @@
       "ap2ID": "id-1633"
     },
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-1628",
+      "ap2ID": "id-1642"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-1628",
+      "ap2ID": "id-1649"
+    },
+    {
       "ap2Name": "Shape 3",
       "ap1ID": "id-1633",
+      "ap2ID": "id-1628"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-1639",
+      "ap2ID": "id-1628"
+    },
+    {
+      "ap2Name": "Shape 4",
+      "ap1ID": "id-1646",
       "ap2ID": "id-1628"
     }
   ],
