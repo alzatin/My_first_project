@@ -173,7 +173,7 @@
           "name": "endPosition",
           "ioValue": [
             10,
-            50,
+            500,
             0
           ]
         },
