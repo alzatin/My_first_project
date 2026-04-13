@@ -26,8 +26,7 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 100,
-          "currentEquation": "100"
+          "ioValue": 100
         },
         {
           "name": "y length",
@@ -59,8 +58,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 30,
-          "currentEquation": "30"
+          "ioValue": 30
         }
       ]
     },
@@ -109,6 +107,42 @@
         {
           "name": "y length",
           "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.6123139377537212,
+      "y": 0.7439024390243902,
+      "uniqueID": "id-2337",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 13
+        }
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.7543978349120433,
+      "y": 0.6920731707317074,
+      "uniqueID": "id-2341",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": null
         }
       ]
     },
@@ -221,38 +255,40 @@
       "fileTypeVersion": 1
     },
     {
-      "atomType": "Extrude",
-      "x": 0.6123139377537212,
-      "y": 0.7439024390243902,
-      "uniqueID": "id-2337",
+      "atomType": "Label",
+      "x": 0.8255908720456399,
+      "y": 0.29573170731707316,
+      "uniqueID": "id-2381",
       "ioValues": [
         {
           "name": "geometry",
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
-          "name": "height",
-          "ioValue": 13
-        }
-      ]
-    },
-    {
-      "atomType": "Assembly",
-      "x": 0.7543978349120433,
-      "y": 0.6920731707317074,
-      "uniqueID": "id-2341",
-      "ioValues": [
-        {
-          "name": "Shape 1",
-          "ioValue": null
+          "name": "text",
+          "ioValue": "label",
+          "currentEquation": "label"
         },
         {
-          "name": "Shape 2",
-          "ioValue": null
+          "name": "startPosition",
+          "ioValue": [
+            0,
+            0,
+            0
+          ]
         },
         {
-          "name": "Shape 3",
-          "ioValue": null
+          "name": "endPosition",
+          "ioValue": [
+            10,
+            50,
+            0
+          ]
+        },
+        {
+          "name": "color",
+          "ioValue": "#dd863b",
+          "currentEquation": "#dd863b"
         }
       ]
     }
@@ -290,13 +326,13 @@
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-2300",
-      "ap2ID": "id-2337"
+      "ap1ID": "id-2269",
+      "ap2ID": "id-2381"
     },
     {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-2325",
-      "ap2ID": "id-2341"
+      "ap2Name": "geometry",
+      "ap1ID": "id-2300",
+      "ap2ID": "id-2337"
     },
     {
       "ap2Name": "A",
@@ -307,9 +343,14 @@
       "ap2Name": "Shape 2",
       "ap1ID": "id-2337",
       "ap2ID": "id-2341"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-2325",
+      "ap2ID": "id-2341"
     }
   ],
-  "unitsKey": "MM",
+  "unitsKey": "Inches",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
 }
