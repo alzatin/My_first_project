@@ -147,6 +147,44 @@
       ]
     },
     {
+      "atomType": "Label",
+      "x": 0.8207008964955175,
+      "y": 0.323170731707317,
+      "uniqueID": "id-2381",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "text",
+          "ioValue": "label",
+          "currentEquation": "label"
+        },
+        {
+          "name": "startPosition",
+          "ioValue": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "endPosition",
+          "ioValue": [
+            10,
+            50,
+            0
+          ]
+        },
+        {
+          "name": "color",
+          "ioValue": "#dd863b",
+          "currentEquation": "#dd863b"
+        }
+      ]
+    },
+    {
       "atomType": "GitHubMolecule",
       "x": 0.6799729364005412,
       "y": 0.399390243902439,
@@ -253,44 +291,6 @@
       },
       "unitsKey": "MM",
       "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Label",
-      "x": 0.8255908720456399,
-      "y": 0.29573170731707316,
-      "uniqueID": "id-2381",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "text",
-          "ioValue": "label",
-          "currentEquation": "label"
-        },
-        {
-          "name": "startPosition",
-          "ioValue": [
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "name": "endPosition",
-          "ioValue": [
-            10,
-            50,
-            0
-          ]
-        },
-        {
-          "name": "color",
-          "ioValue": "#dd863b",
-          "currentEquation": "#dd863b"
-        }
-      ]
     }
   ],
   "allConnectors": [
@@ -350,7 +350,7 @@
       "ap2ID": "id-2341"
     }
   ],
-  "unitsKey": "Inches",
+  "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
 }
