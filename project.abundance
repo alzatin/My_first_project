@@ -19,16 +19,67 @@
       ]
     },
     {
+      "atomType": "Circle",
+      "x": 0.10187449062754686,
+      "y": 0.625,
+      "uniqueID": "id-2477",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.37475345167652857,
+      "y": 0.7865853658536585,
+      "uniqueID": "id-2480",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.2754686226568867,
+      "y": 0.5640243902439024,
+      "uniqueID": "id-2484",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 30
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
       "atomType": "GitHubMolecule",
-      "x": 0.557199211045365,
-      "y": 0.5182926829268293,
+      "x": 0.32599837000814996,
+      "y": 0.33231707317073167,
       "uniqueID": "id-2447",
       "name": "Radial-Pattern",
       "ioValues": [
         {
           "name": "Number",
-          "ioValue": 3,
-          "currentEquation": "3"
+          "ioValue": 3
         },
         {
           "name": "Angle",
@@ -235,65 +286,29 @@
       "fileTypeVersion": 1
     },
     {
-      "atomType": "Circle",
-      "x": 0.22781065088757396,
-      "y": 0.5823170731707317,
-      "uniqueID": "id-2477",
+      "atomType": "Code",
+      "x": 0.6544417277913611,
+      "y": 0.6280487804878049,
+      "uniqueID": "id-2527",
       "ioValues": [
         {
-          "name": "diameter",
-          "ioValue": 10
-        }
-      ]
-    },
-    {
-      "atomType": "Extrude",
-      "x": 0.37475345167652857,
-      "y": 0.7865853658536585,
-      "uniqueID": "id-2480",
-      "ioValues": [
-        {
-          "name": "geometry",
+          "name": "shape",
           "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "radius",
+          "ioValue": 5
         },
         {
           "name": "height",
           "ioValue": 10
         }
-      ]
-    },
-    {
-      "atomType": "Move",
-      "x": 0.39349112426035504,
-      "y": 0.5487804878048781,
-      "uniqueID": "id-2484",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": 30,
-          "currentEquation": "30"
-        },
-        {
-          "name": "yDist",
-          "ioValue": 0
-        },
-        {
-          "name": "zDist",
-          "ioValue": 0
-        }
-      ]
+      ],
+      "codeVersion": 1,
+      "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"radius\", type: \"number\", defaultValue: 5 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 }\n];\n\nlet importedShape = library[shape];\nlet newPlane = replicad.makePlane()\nlet circDraw = replicad.drawCircle(radius)\nlet sketchCir = circDraw.sketchOnPlane(newPlane)\nlet cyl = sketchCir.extrude(height)\nlet cylObj = {\n  geometry: [cyl],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\n\nlet assembly = await Assembly([importedShape, cylObj]);\nreturn assembly;\n"
     }
   ],
   "allConnectors": [
-    {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-2447",
-      "ap2ID": "id-2"
-    },
     {
       "ap2Name": "geometry",
       "ap1ID": "id-2477",
@@ -308,6 +323,16 @@
       "ap2Name": "Shape",
       "ap1ID": "id-2484",
       "ap2ID": "id-2447"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-2447",
+      "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "shape",
+      "ap1ID": "id-2447",
+      "ap2ID": "id-2527"
     }
   ],
   "unitsKey": "Inches",
