@@ -54,8 +54,8 @@
     },
     {
       "atomType": "Color",
-      "x": 0.5771626297577854,
-      "y": 0.6585365853658536,
+      "x": 0.698961937716263,
+      "y": 0.5701219512195123,
       "uniqueID": "id-2574",
       "ioValues": [
         {
@@ -67,8 +67,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.43321799307958475,
-      "y": 0.5365853658536586,
+      "x": 0.38892733564013837,
+      "y": 0.29268292682926833,
       "uniqueID": "id-2484",
       "ioValues": [
         {
@@ -119,9 +119,9 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.5482189400521286,
-      "y": 0.28353658536585363,
-      "uniqueID": "id-2447",
+      "x": 0.5411764705882353,
+      "y": 0.25609756097560976,
+      "uniqueID": "id-2692",
       "name": "Radial-Pattern",
       "ioValues": [
         {
@@ -131,6 +131,10 @@
         {
           "name": "Angle",
           "ioValue": 10
+        },
+        {
+          "name": "Shape",
+          "ioValue": "__GEOMETRY_INPUT__"
         }
       ],
       "topLevel": false,
@@ -139,7 +143,7 @@
           "atomType": "Output",
           "x": 0.98,
           "y": 0.5,
-          "uniqueID": "id-2438",
+          "uniqueID": "id-2684",
           "ioValues": [
             {
               "name": "number or geometry",
@@ -149,9 +153,9 @@
         },
         {
           "atomType": "Code",
-          "x": 0.4571629213483146,
-          "y": 0.6445783132530121,
-          "uniqueID": "id-2439",
+          "x": 0.5009861932938856,
+          "y": 0.5060975609756098,
+          "uniqueID": "id-2685",
           "ioValues": [
             {
               "name": "Shape",
@@ -167,13 +171,13 @@
             }
           ],
           "codeVersion": 1,
-          "code": "\nconst Inputs = [\n  { inputName: \"Shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"Number\", type: \"number\", defaultValue: 5 },\n  { inputName: \"Angle\", type: \"number\", defaultValue: 10 }\n];\n\n\nconsole.log(Shape)\nlet shapesArray = [];\nfor (let i = 0; i < Number; i++) {\n    let rotatedShape = await Rotate(Shape, 0, 0, Angle * i)\n    shapesArray.push(rotatedShape)\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n"
+          "code": "\nconst Inputs = [\n  { inputName: \"Shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"Number\", type: \"number\", defaultValue: 5 },\n  { inputName: \"Angle\", type: \"number\", defaultValue: 10 }\n];\n\n\nlet shapesArray = [];\nfor (let i = 0; i < Number; i++) {\n    let rotatedShape = await Rotate(Shape, 0, 0, Angle * i)\n    shapesArray.push(rotatedShape)\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n"
         },
         {
           "atomType": "Rectangle",
-          "x": 0.1678714859437751,
-          "y": 0.2168674698795181,
-          "uniqueID": "id-2440",
+          "x": 0.2603550295857988,
+          "y": 0.20121951219512196,
+          "uniqueID": "id-2686",
           "ioValues": [
             {
               "name": "x length",
@@ -187,9 +191,9 @@
         },
         {
           "atomType": "Move",
-          "x": 0.3927710843373494,
-          "y": 0.3042168674698795,
-          "uniqueID": "id-2441",
+          "x": 0.5187376725838264,
+          "y": 0.3018292682926829,
+          "uniqueID": "id-2687",
           "ioValues": [
             {
               "name": "geometry",
@@ -211,9 +215,9 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.26265060240963856,
-          "y": 0.29819277108433734,
-          "uniqueID": "id-2442",
+          "x": 0.34023668639053256,
+          "y": 0.23780487804878048,
+          "uniqueID": "id-2688",
           "ioValues": [
             {
               "name": "geometry",
@@ -229,7 +233,7 @@
           "atomType": "Input",
           "x": 0.025384615384615384,
           "y": 0.15384615384615385,
-          "uniqueID": "id-2443",
+          "uniqueID": "id-2689",
           "name": "Number",
           "type": "number"
         },
@@ -237,7 +241,7 @@
           "atomType": "Input",
           "x": 0.025384615384615384,
           "y": 0.24615384615384617,
-          "uniqueID": "id-2444",
+          "uniqueID": "id-2690",
           "name": "Angle",
           "type": "number"
         },
@@ -245,63 +249,41 @@
           "atomType": "Input",
           "x": 0.025384615384615384,
           "y": 0.3384615384615385,
-          "uniqueID": "id-2445",
+          "uniqueID": "id-2691",
           "name": "Shape",
-          "type": "number"
-        },
-        {
-          "atomType": "Code",
-          "x": 0.5582865168539326,
-          "y": 0.7680722891566265,
-          "uniqueID": "id-2446",
-          "ioValues": [
-            {
-              "name": "shape",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "radius",
-              "ioValue": 5
-            },
-            {
-              "name": "height",
-              "ioValue": 10
-            }
-          ],
-          "codeVersion": 1,
-          "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"radius\", type: \"number\", defaultValue: 5 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 }\n];\n\nlet importedShape = library[shape];\nlet newPlane = replicad.makePlane()\nlet circDraw = replicad.drawCircle(radius)\nlet sketchCir = circDraw.sketchOnPlane(newPlane)\nlet cyl = sketchCir.extrude(height)\nlet cylObj = {\n  geometry: [cyl],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\n\nlet assembly = await Assembly([importedShape, cylObj]);\nreturn assembly;\n"
+          "type": "geometry"
         }
       ],
       "allConnectors": [
         {
           "ap2Name": "number or geometry",
-          "ap1ID": "id-2439",
-          "ap2ID": "id-2438"
+          "ap1ID": "id-2685",
+          "ap2ID": "id-2684"
         },
         {
           "ap2Name": "geometry",
-          "ap1ID": "id-2440",
-          "ap2ID": "id-2442"
+          "ap1ID": "id-2686",
+          "ap2ID": "id-2688"
         },
         {
           "ap2Name": "geometry",
-          "ap1ID": "id-2442",
-          "ap2ID": "id-2441"
+          "ap1ID": "id-2688",
+          "ap2ID": "id-2687"
         },
         {
           "ap2Name": "Number",
-          "ap1ID": "id-2443",
-          "ap2ID": "id-2439"
+          "ap1ID": "id-2689",
+          "ap2ID": "id-2685"
         },
         {
           "ap2Name": "Angle",
-          "ap1ID": "id-2444",
-          "ap2ID": "id-2439"
+          "ap1ID": "id-2690",
+          "ap2ID": "id-2685"
         },
         {
           "ap2Name": "Shape",
-          "ap1ID": "id-2445",
-          "ap2ID": "id-2439"
+          "ap1ID": "id-2691",
+          "ap2ID": "id-2685"
         }
       ],
       "parentRepo": {
@@ -347,7 +329,7 @@
     {
       "ap2Name": "Shape",
       "ap1ID": "id-2484",
-      "ap2ID": "id-2447"
+      "ap2ID": "id-2692"
     },
     {
       "ap2Name": "geometry",
@@ -356,12 +338,12 @@
     },
     {
       "ap2Name": "shape",
-      "ap1ID": "id-2447",
+      "ap1ID": "id-2692",
       "ap2ID": "id-2527"
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-2447",
+      "ap1ID": "id-2692",
       "ap2ID": "id-2574"
     }
   ],
