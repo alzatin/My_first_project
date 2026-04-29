@@ -184,6 +184,48 @@
       ]
     },
     {
+      "atomType": "Label",
+      "x": 0.46648044692737434,
+      "y": 0.8231707317073171,
+      "uniqueID": "id-2936",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "text",
+          "ioValue": "longlonglonglonglonglonglonglonglonglonglong",
+          "currentEquation": "longlonglonglonglonglonglonglonglonglonglong"
+        },
+        {
+          "name": "startPosition",
+          "ioValue": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "endPosition",
+          "ioValue": [
+            10,
+            10000,
+            0
+          ]
+        },
+        {
+          "name": "color",
+          "ioValue": "#3F3CDD",
+          "currentEquation": "#3F3CDD"
+        },
+        {
+          "name": "fontSize",
+          "ioValue": 1
+        }
+      ]
+    },
+    {
       "atomType": "GitHubMolecule",
       "x": 0.5418685121107266,
       "y": 0.39329268292682923,
@@ -379,48 +421,6 @@
       },
       "unitsKey": "MM",
       "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Label",
-      "x": 0.46648044692737434,
-      "y": 0.8231707317073171,
-      "uniqueID": "id-2936",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "text",
-          "ioValue": "longlonglonglonglonglonglonglonglonglonglong",
-          "currentEquation": "longlonglonglonglonglonglonglonglonglonglong"
-        },
-        {
-          "name": "startPosition",
-          "ioValue": [
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "name": "endPosition",
-          "ioValue": [
-            10,
-            10000,
-            0
-          ]
-        },
-        {
-          "name": "color",
-          "ioValue": "#3F3CDD",
-          "currentEquation": "#3F3CDD"
-        },
-        {
-          "name": "fontSize",
-          "ioValue": 1
-        }
-      ]
     }
   ],
   "allConnectors": [
