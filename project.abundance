@@ -185,8 +185,8 @@
     },
     {
       "atomType": "Label",
-      "x": 0.478584729981378,
-      "y": 0.7774390243902438,
+      "x": 0.4813780260707635,
+      "y": 0.801829268292683,
       "uniqueID": "id-2869",
       "ioValues": [
         {
@@ -216,8 +216,8 @@
         },
         {
           "name": "color",
-          "ioValue": "#3F3CDD",
-          "currentEquation": "#3F3CDD"
+          "ioValue": "#5b5a87",
+          "currentEquation": "#5b5a87"
         },
         {
           "name": "fontSize",
