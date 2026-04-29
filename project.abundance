@@ -20,8 +20,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.10173010380622838,
-      "y": 0.6524390243902439,
+      "x": 0.09472259810554803,
+      "y": 0.5060975609756098,
       "uniqueID": "id-2477",
       "ioValues": [
         {
@@ -67,8 +67,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.38892733564013837,
-      "y": 0.29268292682926833,
+      "x": 0.3531799729364006,
+      "y": 0.23780487804878048,
       "uniqueID": "id-2484",
       "ioValues": [
         {
@@ -90,21 +90,9 @@
       ]
     },
     {
-      "atomType": "Circle",
-      "x": 0.25951557093425603,
-      "y": 0.6920731707317074,
-      "uniqueID": "id-2585",
-      "ioValues": [
-        {
-          "name": "diameter",
-          "ioValue": 10
-        }
-      ]
-    },
-    {
       "atomType": "Extrude",
-      "x": 0.23806228373702423,
-      "y": 0.39634146341463417,
+      "x": 0.19012178619756429,
+      "y": 0.24085365853658536,
       "uniqueID": "id-2597",
       "ioValues": [
         {
@@ -312,8 +300,57 @@
         "isLocal": false
       },
       "unitsKey": "MM",
-      "fileTypeVersion": 1,
-      "lastReloadedFromGithubAt": 1777318939896
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Label",
+      "x": 0.45872801082543974,
+      "y": 0.75,
+      "uniqueID": "id-2795",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "text",
+          "ioValue": "label",
+          "currentEquation": "label"
+        },
+        {
+          "name": "startPosition",
+          "ioValue": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "endPosition",
+          "ioValue": [
+            10,
+            10,
+            0
+          ]
+        },
+        {
+          "name": "color",
+          "ioValue": "#3F3CDD",
+          "currentEquation": "#3F3CDD"
+        }
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.29025710419485795,
+      "y": 0.5670731707317073,
+      "uniqueID": "id-2802",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -333,6 +370,11 @@
       "ap2ID": "id-2748"
     },
     {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-2484",
+      "ap2ID": "id-2802"
+    },
+    {
       "ap2Name": "geometry",
       "ap1ID": "id-2597",
       "ap2ID": "id-2484"
@@ -346,6 +388,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-2748",
       "ap2ID": "id-2574"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2802",
+      "ap2ID": "id-2795"
     }
   ],
   "unitsKey": "Inches",
