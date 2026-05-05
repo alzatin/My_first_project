@@ -4,6 +4,12 @@
   "y": 0,
   "uniqueID": "id-1",
   "name": "My_first_project",
+  "ioValues": [
+    {
+      "name": "x",
+      "ioValue": 10
+    }
+  ],
   "topLevel": true,
   "allAtoms": [
     {
@@ -20,8 +26,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.0812395309882747,
-      "y": 0.6158536585365854,
+      "x": 0.10187449062754686,
+      "y": 0.625,
       "uniqueID": "id-2477",
       "ioValues": [
         {
@@ -31,44 +37,25 @@
       ]
     },
     {
-      "atomType": "Code",
-      "x": 0.7579564489112227,
-      "y": 0.42378048780487804,
-      "uniqueID": "id-2527",
+      "atomType": "Extrude",
+      "x": 0.37475345167652857,
+      "y": 0.7865853658536585,
+      "uniqueID": "id-2480",
       "ioValues": [
         {
-          "name": "shape",
+          "name": "geometry",
           "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "radius",
-          "ioValue": 5
         },
         {
           "name": "height",
           "ioValue": 10
         }
-      ],
-      "codeVersion": 1,
-      "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"radius\", type: \"number\", defaultValue: 5 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 }\n];\n\nlet importedShape = library[shape];\nlet newPlane = replicad.makePlane()\nlet circDraw = replicad.drawCircle(radius)\nlet sketchCir = circDraw.sketchOnPlane(newPlane)\nlet cyl = sketchCir.extrude(height)\nlet cylObj = {\n  geometry: [cyl],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\n\nlet assembly = await Assembly([importedShape, cylObj]);\nreturn assembly;\n"
-    },
-    {
-      "atomType": "Color",
-      "x": 0.7051926298157454,
-      "y": 0.8231707317073171,
-      "uniqueID": "id-2574",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ],
-      "selectedColor": "Default"
+      ]
     },
     {
       "atomType": "Move",
-      "x": 0.3149078726968174,
-      "y": 0.3871951219512195,
+      "x": 0.3130252100840336,
+      "y": 0.4388059701492537,
       "uniqueID": "id-2484",
       "ioValues": [
         {
@@ -90,146 +77,32 @@
       ]
     },
     {
-      "atomType": "Extrude",
-      "x": 0.1591289782244556,
-      "y": 0.2621951219512195,
-      "uniqueID": "id-2597",
+      "atomType": "Code",
+      "x": 0.6589635854341737,
+      "y": 0.2507462686567164,
+      "uniqueID": "id-2527",
       "ioValues": [
         {
-          "name": "geometry",
+          "name": "shape",
           "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "radius",
+          "ioValue": 5
         },
         {
           "name": "height",
           "ioValue": 10
         }
-      ]
-    },
-    {
-      "atomType": "Assembly",
-      "x": 0.3509212730318258,
-      "y": 0.8353658536585366,
-      "uniqueID": "id-2802",
-      "ioValues": [
-        {
-          "name": "Shape 1",
-          "ioValue": null
-        }
-      ]
-    },
-    {
-      "atomType": "Rotate",
-      "x": 0.26381909547738697,
-      "y": 0.6829268292682927,
-      "uniqueID": "id-2856",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "x-axis degrees",
-          "ioValue": 1
-        },
-        {
-          "name": "y-axis degrees",
-          "ioValue": 0
-        },
-        {
-          "name": "z-axis degrees",
-          "ioValue": 0
-        }
-      ]
-    },
-    {
-      "atomType": "Label",
-      "x": 0.516750418760469,
-      "y": 0.6951219512195121,
-      "uniqueID": "id-2862",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "text",
-          "ioValue": "label",
-          "currentEquation": "label"
-        },
-        {
-          "name": "startPosition",
-          "ioValue": [
-            10,
-            0,
-            0
-          ]
-        },
-        {
-          "name": "endPosition",
-          "ioValue": [
-            10,
-            10,
-            0
-          ]
-        },
-        {
-          "name": "color",
-          "ioValue": "#3F3CDD",
-          "currentEquation": "#3F3CDD"
-        },
-        {
-          "name": "fontSize",
-          "ioValue": 50
-        }
-      ]
-    },
-    {
-      "atomType": "Label",
-      "x": 0.432998324958124,
-      "y": 0.7103658536585366,
-      "uniqueID": "id-2936",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "text",
-          "ioValue": "longlonglonglonglonglonglonglonglonglonglong",
-          "currentEquation": "longlonglonglonglonglonglonglonglonglonglong"
-        },
-        {
-          "name": "startPosition",
-          "ioValue": [
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "name": "endPosition",
-          "ioValue": [
-            10,
-            500,
-            0
-          ]
-        },
-        {
-          "name": "color",
-          "ioValue": "#3F3CDD",
-          "currentEquation": "#3F3CDD"
-        },
-        {
-          "name": "fontSize",
-          "ioValue": 25
-        }
-      ]
+      ],
+      "interpreterVersion": 0,
+      "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"radius\", type: \"number\", defaultValue: 5 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 }\n];\n\nlet importedShape = library[shape];\nlet newPlane = replicad.makePlane()\nlet circDraw = replicad.drawCircle(radius)\nlet sketchCir = circDraw.sketchOnPlane(newPlane)\nlet cyl = sketchCir.extrude(height)\nlet cylObj = {\n  geometry: [cyl],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\n\nlet assembly = await Assembly([importedShape, cylObj]);\nreturn assembly;\n"
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.5611390284757118,
-      "y": 0.3628048780487805,
-      "uniqueID": "id-2748",
+      "x": 0.4236694677871148,
+      "y": 0.26865671641791045,
+      "uniqueID": "id-2447",
       "name": "Radial-Pattern",
       "ioValues": [
         {
@@ -239,10 +112,6 @@
         {
           "name": "Angle",
           "ioValue": 10
-        },
-        {
-          "name": "Shape",
-          "ioValue": "__GEOMETRY_INPUT__"
         }
       ],
       "topLevel": false,
@@ -251,7 +120,7 @@
           "atomType": "Output",
           "x": 0.98,
           "y": 0.5,
-          "uniqueID": "id-2740",
+          "uniqueID": "id-2438",
           "ioValues": [
             {
               "name": "number or geometry",
@@ -261,9 +130,9 @@
         },
         {
           "atomType": "Code",
-          "x": 0.5009861932938856,
-          "y": 0.5060975609756098,
-          "uniqueID": "id-2741",
+          "x": 0.4571629213483146,
+          "y": 0.6445783132530121,
+          "uniqueID": "id-2439",
           "ioValues": [
             {
               "name": "Shape",
@@ -278,14 +147,14 @@
               "ioValue": 10
             }
           ],
-          "codeVersion": 1,
-          "code": "\nconst Inputs = [\n  { inputName: \"Shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"Number\", type: \"number\", defaultValue: 5 },\n  { inputName: \"Angle\", type: \"number\", defaultValue: 10 }\n];\n\n\nlet shapesArray = [];\nfor (let i = 0; i < Number; i++) {\n    let rotatedShape = await Rotate(Shape, 0, 0, Angle * i)\n    shapesArray.push(rotatedShape)\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n"
+          "interpreterVersion": 0,
+          "code": "\nconst Inputs = [\n  { inputName: \"Shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"Number\", type: \"number\", defaultValue: 5 },\n  { inputName: \"Angle\", type: \"number\", defaultValue: 10 }\n];\n\n\nconsole.log(Shape)\nlet shapesArray = [];\nfor (let i = 0; i < Number; i++) {\n    let rotatedShape = await Rotate(Shape, 0, 0, Angle * i)\n    shapesArray.push(rotatedShape)\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n"
         },
         {
           "atomType": "Rectangle",
-          "x": 0.2603550295857988,
-          "y": 0.20121951219512196,
-          "uniqueID": "id-2742",
+          "x": 0.1678714859437751,
+          "y": 0.2168674698795181,
+          "uniqueID": "id-2440",
           "ioValues": [
             {
               "name": "x length",
@@ -299,9 +168,9 @@
         },
         {
           "atomType": "Move",
-          "x": 0.5187376725838264,
-          "y": 0.3018292682926829,
-          "uniqueID": "id-2743",
+          "x": 0.3927710843373494,
+          "y": 0.3042168674698795,
+          "uniqueID": "id-2441",
           "ioValues": [
             {
               "name": "geometry",
@@ -323,9 +192,9 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.34023668639053256,
-          "y": 0.23780487804878048,
-          "uniqueID": "id-2744",
+          "x": 0.26265060240963856,
+          "y": 0.29819277108433734,
+          "uniqueID": "id-2442",
           "ioValues": [
             {
               "name": "geometry",
@@ -341,7 +210,7 @@
           "atomType": "Input",
           "x": 0.025384615384615384,
           "y": 0.15384615384615385,
-          "uniqueID": "id-2745",
+          "uniqueID": "id-2443",
           "name": "Number",
           "type": "number"
         },
@@ -349,7 +218,7 @@
           "atomType": "Input",
           "x": 0.025384615384615384,
           "y": 0.24615384615384617,
-          "uniqueID": "id-2746",
+          "uniqueID": "id-2444",
           "name": "Angle",
           "type": "number"
         },
@@ -357,41 +226,63 @@
           "atomType": "Input",
           "x": 0.025384615384615384,
           "y": 0.3384615384615385,
-          "uniqueID": "id-2747",
+          "uniqueID": "id-2445",
           "name": "Shape",
-          "type": "geometry"
+          "type": "number"
+        },
+        {
+          "atomType": "Code",
+          "x": 0.5582865168539326,
+          "y": 0.7680722891566265,
+          "uniqueID": "id-2446",
+          "ioValues": [
+            {
+              "name": "shape",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "radius",
+              "ioValue": 5
+            },
+            {
+              "name": "height",
+              "ioValue": 10
+            }
+          ],
+          "interpreterVersion": 0,
+          "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"radius\", type: \"number\", defaultValue: 5 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 }\n];\n\nlet importedShape = library[shape];\nlet newPlane = replicad.makePlane()\nlet circDraw = replicad.drawCircle(radius)\nlet sketchCir = circDraw.sketchOnPlane(newPlane)\nlet cyl = sketchCir.extrude(height)\nlet cylObj = {\n  geometry: [cyl],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\n\nlet assembly = await Assembly([importedShape, cylObj]);\nreturn assembly;\n"
         }
       ],
       "allConnectors": [
         {
           "ap2Name": "number or geometry",
-          "ap1ID": "id-2741",
-          "ap2ID": "id-2740"
+          "ap1ID": "id-2439",
+          "ap2ID": "id-2438"
         },
         {
           "ap2Name": "geometry",
-          "ap1ID": "id-2742",
-          "ap2ID": "id-2744"
+          "ap1ID": "id-2440",
+          "ap2ID": "id-2442"
         },
         {
           "ap2Name": "geometry",
-          "ap1ID": "id-2744",
-          "ap2ID": "id-2743"
+          "ap1ID": "id-2442",
+          "ap2ID": "id-2441"
         },
         {
           "ap2Name": "Number",
-          "ap1ID": "id-2745",
-          "ap2ID": "id-2741"
+          "ap1ID": "id-2443",
+          "ap2ID": "id-2439"
         },
         {
           "ap2Name": "Angle",
-          "ap1ID": "id-2746",
-          "ap2ID": "id-2741"
+          "ap1ID": "id-2444",
+          "ap2ID": "id-2439"
         },
         {
           "ap2Name": "Shape",
-          "ap1ID": "id-2747",
-          "ap2ID": "id-2741"
+          "ap1ID": "id-2445",
+          "ap2ID": "id-2439"
         }
       ],
       "parentRepo": {
@@ -421,58 +312,48 @@
       },
       "unitsKey": "MM",
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.30149253731343284,
+      "uniqueID": "id-2574",
+      "name": "x"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.4915966386554622,
+      "y": 0.7611940298507462,
+      "uniqueID": "id-2577",
+      "name": "x*2",
+      "currentEquation": "x*2"
     }
   ],
   "allConnectors": [
     {
       "ap2Name": "geometry",
       "ap1ID": "id-2477",
-      "ap2ID": "id-2597"
+      "ap2ID": "id-2480"
     },
     {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-2574",
-      "ap2ID": "id-2"
+      "ap2Name": "geometry",
+      "ap1ID": "id-2480",
+      "ap2ID": "id-2484"
     },
     {
       "ap2Name": "Shape",
       "ap1ID": "id-2484",
-      "ap2ID": "id-2748"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2484",
-      "ap2ID": "id-2856"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2484",
-      "ap2ID": "id-2862"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2597",
-      "ap2ID": "id-2484"
-    },
-    {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-2856",
-      "ap2ID": "id-2802"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2856",
-      "ap2ID": "id-2936"
+      "ap2ID": "id-2447"
     },
     {
       "ap2Name": "shape",
-      "ap1ID": "id-2748",
+      "ap1ID": "id-2447",
       "ap2ID": "id-2527"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2748",
-      "ap2ID": "id-2574"
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-2577",
+      "ap2ID": "id-2"
     }
   ],
   "unitsKey": "Inches",
