@@ -38,8 +38,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.37475345167652857,
-      "y": 0.7865853658536585,
+      "x": 0.20723226703755215,
+      "y": 0.4451219512195122,
       "uniqueID": "id-2480",
       "ioValues": [
         {
@@ -54,8 +54,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.3130252100840336,
-      "y": 0.4388059701492537,
+      "x": 0.3574408901251739,
+      "y": 0.3475609756097561,
       "uniqueID": "id-2484",
       "ioValues": [
         {
@@ -78,8 +78,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.6589635854341737,
-      "y": 0.2507462686567164,
+      "x": 0.7600834492350487,
+      "y": 0.25609756097560976,
       "uniqueID": "id-2527",
       "ioValues": [
         {
@@ -99,9 +99,40 @@
       "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"radius\", type: \"number\", defaultValue: 5 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 }\n];\n\nlet importedShape = library[shape];\nlet newPlane = replicad.makePlane()\nlet circDraw = replicad.drawCircle(radius)\nlet sketchCir = circDraw.sketchOnPlane(newPlane)\nlet cyl = sketchCir.extrude(height)\nlet cylObj = {\n  geometry: [cyl],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\n\nlet assembly = await Assembly([importedShape, cylObj]);\nreturn assembly;\n"
     },
     {
+      "atomType": "Input",
+      "x": 0.0264,
+      "y": 0.16,
+      "uniqueID": "id-2574",
+      "name": "x"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.32684283727399166,
+      "y": 0.7865853658536585,
+      "uniqueID": "id-2577",
+      "name": "x*2",
+      "currentEquation": "x*2"
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.6237830319888735,
+      "y": 0.4451219512195122,
+      "uniqueID": "id-2650",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 20
+        },
+        {
+          "name": "y length",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
       "atomType": "GitHubMolecule",
-      "x": 0.4236694677871148,
-      "y": 0.26865671641791045,
+      "x": 0.47496522948539643,
+      "y": 0.19207317073170732,
       "uniqueID": "id-2447",
       "name": "Radial-Pattern",
       "ioValues": [
@@ -208,24 +239,24 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0264,
+          "y": 0.16,
           "uniqueID": "id-2443",
           "name": "Number",
           "type": "number"
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "x": 0.0264,
+          "y": 0.256,
           "uniqueID": "id-2444",
           "name": "Angle",
           "type": "number"
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.3384615384615385,
+          "x": 0.0264,
+          "y": 0.352,
           "uniqueID": "id-2445",
           "name": "Shape",
           "type": "number"
@@ -314,24 +345,9 @@
       "fileTypeVersion": 1
     },
     {
-      "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.30149253731343284,
-      "uniqueID": "id-2574",
-      "name": "x"
-    },
-    {
-      "atomType": "Equation",
-      "x": 0.4915966386554622,
-      "y": 0.7611940298507462,
-      "uniqueID": "id-2577",
-      "name": "x*2",
-      "currentEquation": "x*2"
-    },
-    {
       "atomType": "GitHubMolecule",
-      "x": 0.5357142857142857,
-      "y": 0.5253731343283582,
+      "x": 0.47357440890125174,
+      "y": 0.4420731707317073,
       "uniqueID": "id-2599",
       "name": "My_first_project",
       "ioValues": [
@@ -430,8 +446,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0264,
+          "y": 0.16,
           "uniqueID": "id-2597",
           "name": "x"
         },
@@ -553,24 +569,24 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0264,
+              "y": 0.16,
               "uniqueID": "id-2593",
               "name": "Number",
               "type": "number"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0264,
+              "y": 0.256,
               "uniqueID": "id-2594",
               "name": "Angle",
               "type": "number"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0264,
+              "y": 0.352,
               "uniqueID": "id-2595",
               "name": "Shape",
               "type": "number"
@@ -716,22 +732,6 @@
       "unitsKey": "Inches",
       "fileTypeVersion": 1,
       "lastReloadedFromGithubAt": 1777947784520
-    },
-    {
-      "atomType": "Rectangle",
-      "x": 0.6827731092436975,
-      "y": 0.5761194029850747,
-      "uniqueID": "id-2650",
-      "ioValues": [
-        {
-          "name": "x length",
-          "ioValue": 20
-        },
-        {
-          "name": "y length",
-          "ioValue": 10
-        }
-      ]
     }
   ],
   "allConnectors": [
@@ -751,14 +751,14 @@
       "ap2ID": "id-2447"
     },
     {
-      "ap2Name": "shape",
-      "ap1ID": "id-2447",
-      "ap2ID": "id-2527"
-    },
-    {
       "ap2Name": "number or geometry",
       "ap1ID": "id-2577",
       "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "shape",
+      "ap1ID": "id-2447",
+      "ap2ID": "id-2527"
     },
     {
       "ap2Name": "x length",
