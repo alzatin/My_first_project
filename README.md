@@ -6,7 +6,8 @@
 
 ## Inputs
 
-- **x** (point3d)
+- **AA** (point3d)
+- **AB** (point3d)
 
 
 
