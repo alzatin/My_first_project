@@ -123,8 +123,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.7187780772686433,
-      "y": 0.3536585365853659,
+      "x": 0.734052111410602,
+      "y": 0.49390243902439024,
       "uniqueID": "id-2883",
       "ioValues": [
         {
@@ -150,42 +150,6 @@
         {
           "name": "diameter",
           "ioValue": 10
-        }
-      ]
-    },
-    {
-      "atomType": "Assembly",
-      "x": 0.8625336927223719,
-      "y": 0.46646341463414637,
-      "uniqueID": "id-2895",
-      "ioValues": [
-        {
-          "name": "Shape 1",
-          "ioValue": null
-        }
-      ]
-    },
-    {
-      "atomType": "Move",
-      "x": 0.7331536388140162,
-      "y": 0.6707317073170731,
-      "uniqueID": "id-2899",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": 0
-        },
-        {
-          "name": "yDist",
-          "ioValue": 30
-        },
-        {
-          "name": "zDist",
-          "ioValue": 0
         }
       ]
     },
@@ -275,21 +239,6 @@
       "tags": [
         "extruded"
       ]
-    },
-    {
-      "atomType": "ExtractTag",
-      "x": 0.8167115902964959,
-      "y": 0.8201219512195123,
-      "uniqueID": "id-3004",
-      "name": "Extract Tag",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ],
-      "tag": "extruded",
-      "tagIndex": 0
     }
   ],
   "allConnectors": [
@@ -324,29 +273,14 @@
       "ap2ID": "id-2883"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2877",
-      "ap2ID": "id-2899"
-    },
-    {
-      "ap2Name": "Shape 1",
+      "ap2Name": "number or geometry",
       "ap1ID": "id-2883",
-      "ap2ID": "id-2895"
+      "ap2ID": "id-2"
     },
     {
       "ap2Name": "geometry",
       "ap1ID": "id-2891",
       "ap2ID": "id-2865"
-    },
-    {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-2895",
-      "ap2ID": "id-2"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2895",
-      "ap2ID": "id-3004"
     },
     {
       "ap2Name": "endPosition",
