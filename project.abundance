@@ -52,7 +52,7 @@
     {
       "atomType": "Extrude",
       "x": 0.49236298292902064,
-      "y": 0.27743902439024387,
+      "y": 0.21646341463414634,
       "uniqueID": "id-2865",
       "ioValues": [
         {
@@ -98,41 +98,17 @@
       ]
     },
     {
-      "atomType": "Move",
-      "x": 0.6037735849056604,
-      "y": 0.6890243902439024,
-      "uniqueID": "id-2877",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": 2
-        },
-        {
-          "name": "yDist",
-          "ioValue": 0
-        },
-        {
-          "name": "zDist",
-          "ioValue": 0
-        }
-      ]
-    },
-    {
       "atomType": "Assembly",
-      "x": 0.734052111410602,
-      "y": 0.49390243902439024,
+      "x": 0.8463611859838275,
+      "y": 0.5457317073170731,
       "uniqueID": "id-2883",
       "ioValues": [
         {
-          "name": "Shape 1",
+          "name": "Shape 2",
           "ioValue": null
         },
         {
-          "name": "Shape 2",
+          "name": "Shape 3",
           "ioValue": null
         }
       ]
@@ -210,8 +186,8 @@
     },
     {
       "atomType": "Tag",
-      "x": 0.4833782569631626,
-      "y": 0.8170731707317074,
+      "x": 0.5381850853548967,
+      "y": 0.725609756097561,
       "uniqueID": "id-2996",
       "name": "doll",
       "ioValues": [
@@ -226,8 +202,8 @@
     },
     {
       "atomType": "Tag",
-      "x": 0.5786163522012578,
-      "y": 0.2713414634146341,
+      "x": 0.7178796046720575,
+      "y": 0.3079268292682927,
       "uniqueID": "id-3001",
       "name": "extruded",
       "ioValues": [
@@ -238,6 +214,31 @@
       ],
       "tags": [
         "extruded"
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.5911949685534591,
+      "y": 0.2652439024390244,
+      "uniqueID": "id-3060",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 30,
+          "currentEquation": "30"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
       ]
     }
   ],
@@ -255,7 +256,7 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "id-2865",
-      "ap2ID": "id-3001"
+      "ap2ID": "id-3060"
     },
     {
       "ap2Name": "geometry",
@@ -266,11 +267,6 @@
       "ap2Name": "geometry",
       "ap1ID": "id-2873",
       "ap2ID": "id-2996"
-    },
-    {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-2877",
-      "ap2ID": "id-2883"
     },
     {
       "ap2Name": "number or geometry",
@@ -288,14 +284,19 @@
       "ap2ID": "id-2945"
     },
     {
-      "ap2Name": "geometry",
+      "ap2Name": "Shape 3",
       "ap1ID": "id-2996",
-      "ap2ID": "id-2877"
+      "ap2ID": "id-2883"
     },
     {
       "ap2Name": "Shape 2",
       "ap1ID": "id-3001",
       "ap2ID": "id-2883"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-3060",
+      "ap2ID": "id-3001"
     }
   ],
   "unitsKey": "Inches",
