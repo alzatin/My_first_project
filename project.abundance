@@ -253,7 +253,7 @@
       "x": 0.4833782569631626,
       "y": 0.8170731707317074,
       "uniqueID": "id-2996",
-      "name": "rect",
+      "name": "doll",
       "ioValues": [
         {
           "name": "geometry",
@@ -261,7 +261,7 @@
         }
       ],
       "tags": [
-        "rect"
+        "doll"
       ]
     },
     {
