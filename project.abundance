@@ -124,7 +124,7 @@
     {
       "atomType": "Assembly",
       "x": 0.7187780772686433,
-      "y": 0.323170731707317,
+      "y": 0.3536585365853659,
       "uniqueID": "id-2883",
       "ioValues": [
         {
@@ -155,24 +155,20 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.8679245283018868,
-      "y": 0.46951219512195125,
+      "x": 0.8625336927223719,
+      "y": 0.46646341463414637,
       "uniqueID": "id-2895",
       "ioValues": [
         {
           "name": "Shape 1",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 2",
           "ioValue": null
         }
       ]
     },
     {
       "atomType": "Move",
-      "x": 0.6802120141342756,
-      "y": 0.7957317073170732,
+      "x": 0.7331536388140162,
+      "y": 0.6707317073170731,
       "uniqueID": "id-2899",
       "ioValues": [
         {
@@ -351,11 +347,6 @@
       "ap2Name": "geometry",
       "ap1ID": "id-2895",
       "ap2ID": "id-3004"
-    },
-    {
-      "ap2Name": "Shape 2",
-      "ap1ID": "id-2899",
-      "ap2ID": "id-2895"
     },
     {
       "ap2Name": "endPosition",
