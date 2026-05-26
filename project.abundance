@@ -99,8 +99,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.8463611859838275,
-      "y": 0.5457317073170731,
+      "x": 0.7848222862632084,
+      "y": 0.6097560975609756,
       "uniqueID": "id-2883",
       "ioValues": [
         {
@@ -121,7 +121,7 @@
       "ioValues": [
         {
           "name": "number of sides",
-          "ioValue": 6
+          "ioValue": 4
         },
         {
           "name": "diameter",
@@ -202,8 +202,8 @@
     },
     {
       "atomType": "Tag",
-      "x": 0.7178796046720575,
-      "y": 0.3079268292682927,
+      "x": 0.718539865513929,
+      "y": 0.25609756097560976,
       "uniqueID": "id-3001",
       "name": "extruded",
       "ioValues": [
@@ -232,8 +232,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 30,
-          "currentEquation": "30"
+          "ioValue": 30
         },
         {
           "name": "zDist",
