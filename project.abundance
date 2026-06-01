@@ -38,8 +38,8 @@
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.15384615384615385,
+      "x": 0.0264,
+      "y": 0.16,
       "uniqueID": "id-2574",
       "name": "AA",
       "type": "point3d",
@@ -83,8 +83,8 @@
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.24615384615384617,
+      "x": 0.0264,
+      "y": 0.256,
       "uniqueID": "id-2953",
       "name": "AB",
       "type": "point3d",
@@ -96,8 +96,8 @@
     },
     {
       "atomType": "Label",
-      "x": 0.7137096774193549,
-      "y": 0.5640243902439024,
+      "x": 0.7066532258064516,
+      "y": 0.5792682926829268,
       "uniqueID": "id-3099",
       "ioValues": [
         {
@@ -108,6 +108,22 @@
           "name": "text",
           "ioValue": "label",
           "currentEquation": "label"
+        },
+        {
+          "name": "startPosition",
+          "ioValue": [
+            12,
+            25,
+            0
+          ]
+        },
+        {
+          "name": "endPosition",
+          "ioValue": [
+            12,
+            25,
+            10
+          ]
         },
         {
           "name": "color",
@@ -175,22 +191,22 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0264,
+          "y": 0.16,
           "uniqueID": "id-3114",
           "name": "X"
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "x": 0.0264,
+          "y": 0.256,
           "uniqueID": "id-3115",
           "name": "Y"
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.3384615384615385,
+          "x": 0.0264,
+          "y": 0.352,
           "uniqueID": "id-3116",
           "name": "Z"
         },
@@ -305,22 +321,22 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0264,
+          "y": 0.16,
           "uniqueID": "id-3174",
           "name": "X"
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "x": 0.0264,
+          "y": 0.256,
           "uniqueID": "id-3175",
           "name": "Y"
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.3384615384615385,
+          "x": 0.0264,
+          "y": 0.352,
           "uniqueID": "id-3176",
           "name": "Z"
         },
@@ -407,6 +423,11 @@
       "ap2ID": "id-3134"
     },
     {
+      "ap2Name": "startPosition",
+      "ap1ID": "id-2574",
+      "ap2ID": "id-3099"
+    },
+    {
       "ap2Name": "geometry",
       "ap1ID": "id-2869",
       "ap2ID": "id-2873"
@@ -414,6 +435,11 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "id-2873",
+      "ap2ID": "id-3099"
+    },
+    {
+      "ap2Name": "endPosition",
+      "ap1ID": "id-2953",
       "ap2ID": "id-3099"
     },
     {
@@ -425,16 +451,6 @@
       "ap2Name": "point2",
       "ap1ID": "id-3118",
       "ap2ID": "id-3134"
-    },
-    {
-      "ap2Name": "startPosition",
-      "ap1ID": "id-3118",
-      "ap2ID": "id-3099"
-    },
-    {
-      "ap2Name": "endPosition",
-      "ap1ID": "id-3172",
-      "ap2ID": "id-3099"
     }
   ],
   "unitsKey": "Inches",
