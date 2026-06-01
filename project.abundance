@@ -422,7 +422,7 @@
         {
           "atomType": "Input",
           "x": 0.0264,
-          "y": 0.3871951219512195,
+          "y": 0.16,
           "uniqueID": "id-3233",
           "type": "point3d",
           "pointValue": null
