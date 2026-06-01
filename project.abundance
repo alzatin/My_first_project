@@ -96,8 +96,8 @@
     },
     {
       "atomType": "Label",
-      "x": 0.7140303842716711,
-      "y": 0.5975609756097561,
+      "x": 0.7308510638297873,
+      "y": 0.6097560975609756,
       "uniqueID": "id-3099",
       "ioValues": [
         {
@@ -108,14 +108,6 @@
           "name": "text",
           "ioValue": "label",
           "currentEquation": "label"
-        },
-        {
-          "name": "startPosition",
-          "ioValue": [
-            12,
-            25,
-            0
-          ]
         },
         {
           "name": "color",
@@ -130,8 +122,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.4495084897229669,
-      "y": 0.5457317073170731,
+      "x": 0.44893617021276594,
+      "y": 0.35060975609756095,
       "uniqueID": "id-3134",
       "ioValues": [
         {
@@ -149,14 +141,14 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.20911528150134048,
-      "y": 0.7378048780487805,
+      "x": 0.2946808510638298,
+      "y": 0.8262195121951219,
       "uniqueID": "id-3118",
       "name": "Point",
       "ioValues": [
         {
           "name": "X",
-          "ioValue": 20
+          "ioValue": 0
         },
         {
           "name": "Y",
@@ -164,7 +156,8 @@
         },
         {
           "name": "Z",
-          "ioValue": 10
+          "ioValue": 50,
+          "currentEquation": "50"
         }
       ],
       "topLevel": false,
@@ -210,7 +203,7 @@
           "ioValues": [
             {
               "name": "x",
-              "ioValue": 20
+              "ioValue": 0
             },
             {
               "name": "y",
@@ -218,7 +211,7 @@
             },
             {
               "name": "z",
-              "ioValue": 10
+              "ioValue": 50
             }
           ],
           "interpreterVersion": 1,
@@ -279,22 +272,23 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.3976764968722073,
-      "y": 0.8414634146341464,
+      "x": 0.21063829787234042,
+      "y": 0.5487804878048781,
       "uniqueID": "id-3172",
       "name": "Point",
       "ioValues": [
         {
           "name": "X",
-          "ioValue": 20
+          "ioValue": 0
         },
         {
           "name": "Y",
-          "ioValue": 10
+          "ioValue": 0
         },
         {
           "name": "Z",
-          "ioValue": 50
+          "ioValue": 15,
+          "currentEquation": "15"
         }
       ],
       "topLevel": false,
@@ -340,15 +334,15 @@
           "ioValues": [
             {
               "name": "x",
-              "ioValue": 20
+              "ioValue": 0
             },
             {
               "name": "y",
-              "ioValue": 10
+              "ioValue": 0
             },
             {
               "name": "z",
-              "ioValue": 50
+              "ioValue": 15
             }
           ],
           "interpreterVersion": 1,
@@ -415,11 +409,6 @@
       "ap2ID": "id-3134"
     },
     {
-      "ap2Name": "startPosition",
-      "ap1ID": "id-2574",
-      "ap2ID": "id-3099"
-    },
-    {
       "ap2Name": "geometry",
       "ap1ID": "id-2869",
       "ap2ID": "id-2873"
@@ -442,6 +431,11 @@
     {
       "ap2Name": "endPosition",
       "ap1ID": "id-3118",
+      "ap2ID": "id-3099"
+    },
+    {
+      "ap2Name": "startPosition",
+      "ap1ID": "id-3172",
       "ap2ID": "id-3099"
     }
   ],
