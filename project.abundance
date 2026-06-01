@@ -122,8 +122,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.44893617021276594,
-      "y": 0.35060975609756095,
+      "x": 0.4978723404255319,
+      "y": 0.3780487804878049,
       "uniqueID": "id-3134",
       "ioValues": [
         {
@@ -156,8 +156,7 @@
         },
         {
           "name": "Z",
-          "ioValue": 50,
-          "currentEquation": "50"
+          "ioValue": 50
         }
       ],
       "topLevel": false,
@@ -272,8 +271,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.21063829787234042,
-      "y": 0.5487804878048781,
+      "x": 0.2936170212765957,
+      "y": 0.4085365853658537,
       "uniqueID": "id-3172",
       "name": "Point",
       "ioValues": [
@@ -287,8 +286,7 @@
         },
         {
           "name": "Z",
-          "ioValue": 15,
-          "currentEquation": "15"
+          "ioValue": 15
         }
       ],
       "topLevel": false,
@@ -400,6 +398,38 @@
       "unitsKey": "Unitless",
       "fileTypeVersion": 1,
       "lastReloadedFromGithubAt": 1780332735592
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.6563829787234042,
+      "y": 0.8323170731707318,
+      "uniqueID": "id-3229",
+      "name": "Molecule",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-3231",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0264,
+          "y": 0.41463414634146345,
+          "uniqueID": "id-3233",
+          "type": "point3d",
+          "pointValue": null
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
@@ -437,6 +467,11 @@
       "ap2Name": "startPosition",
       "ap1ID": "id-3172",
       "ap2ID": "id-3099"
+    },
+    {
+      "ap2Name": "Input",
+      "ap1ID": "id-3172",
+      "ap2ID": "id-3229"
     }
   ],
   "unitsKey": "Inches",
