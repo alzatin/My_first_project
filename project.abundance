@@ -118,14 +118,6 @@
           ]
         },
         {
-          "name": "endPosition",
-          "ioValue": [
-            12,
-            25,
-            10
-          ]
-        },
-        {
           "name": "color",
           "ioValue": "#3F3CDD",
           "currentEquation": "#3F3CDD"
@@ -138,8 +130,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.5080645161290323,
-      "y": 0.49390243902439024,
+      "x": 0.4495084897229669,
+      "y": 0.5457317073170731,
       "uniqueID": "id-3134",
       "ioValues": [
         {
@@ -287,8 +279,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.4022177419354839,
-      "y": 0.8231707317073171,
+      "x": 0.3976764968722073,
+      "y": 0.8414634146341464,
       "uniqueID": "id-3172",
       "name": "Point",
       "ioValues": [
@@ -438,11 +430,6 @@
       "ap2ID": "id-3099"
     },
     {
-      "ap2Name": "endPosition",
-      "ap1ID": "id-2953",
-      "ap2ID": "id-3099"
-    },
-    {
       "ap2Name": "number or geometry",
       "ap1ID": "id-3099",
       "ap2ID": "id-2"
@@ -451,6 +438,11 @@
       "ap2Name": "point2",
       "ap1ID": "id-3118",
       "ap2ID": "id-3134"
+    },
+    {
+      "ap2Name": "endPosition",
+      "ap1ID": "id-3172",
+      "ap2ID": "id-3099"
     }
   ],
   "unitsKey": "Inches",
