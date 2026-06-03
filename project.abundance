@@ -274,14 +274,14 @@
       "ap2ID": "id-3573"
     },
     {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-3562",
-      "ap2ID": "id-2"
-    },
-    {
       "ap2Name": "Shape 2",
       "ap1ID": "id-3566",
       "ap2ID": "id-3562"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-3573",
+      "ap2ID": "id-2"
     },
     {
       "ap2Name": "Shape 2",
