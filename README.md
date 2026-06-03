@@ -8,6 +8,7 @@
 
 - **AA** (point3d)
 - **AB** (point3d)
+- **thickness** (number)
 
 
 

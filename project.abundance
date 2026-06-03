@@ -20,6 +20,11 @@
         0,
         20
       ]
+    },
+    {
+      "name": "thickness",
+      "ioValue": 0.75,
+      "currentEquation": ".75"
     }
   ],
   "topLevel": true,
@@ -67,8 +72,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.3422184006878762,
-      "y": 0.19207317073170732,
+      "x": 0.3396388650042992,
+      "y": 0.17682926829268295,
       "uniqueID": "id-2873",
       "ioValues": [
         {
@@ -77,7 +82,8 @@
         },
         {
           "name": "height",
-          "ioValue": 10
+          "ioValue": 0.75,
+          "currentEquation": "thickness"
         }
       ]
     },
@@ -113,7 +119,7 @@
     {
       "atomType": "Extrude",
       "x": 0.33018056749785035,
-      "y": 0.5853658536585367,
+      "y": 0.573170731707317,
       "uniqueID": "id-3550",
       "ioValues": [
         {
@@ -122,7 +128,8 @@
         },
         {
           "name": "height",
-          "ioValue": 10
+          "ioValue": 0.75,
+          "currentEquation": "thickness"
         }
       ]
     },
@@ -176,8 +183,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.5786758383490971,
-      "y": 0.5335365853658537,
+      "x": 0.530524505588994,
+      "y": 0.5030487804878049,
       "uniqueID": "id-3566",
       "ioValues": [
         {
@@ -216,8 +223,8 @@
     },
     {
       "atomType": "Tag",
-      "x": 0.44034090909090906,
-      "y": 0.673780487804878,
+      "x": 0.40842648323301806,
+      "y": 0.625,
       "uniqueID": "id-3576",
       "name": "tag0",
       "ioValues": [
@@ -310,6 +317,78 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.5152439024390244,
+      "uniqueID": "id-3747",
+      "name": "thickness"
+    },
+    {
+      "atomType": "CutLayout",
+      "x": 0.5141874462596733,
+      "y": 0.7835365853658537,
+      "uniqueID": "id-3750",
+      "name": "Cut Layout",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Sheet Width",
+          "ioValue": 96
+        },
+        {
+          "name": "Sheet Height",
+          "ioValue": 48
+        },
+        {
+          "name": "Part Padding",
+          "ioValue": 0.4
+        },
+        {
+          "name": "Orientations",
+          "ioValue": 12
+        }
+      ],
+      "placements": []
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.6113499570077386,
+      "y": 0.8567073170731707,
+      "uniqueID": "id-3757",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Tool Size",
+          "ioValue": 0.25
+        },
+        {
+          "name": "Passes",
+          "ioValue": 1
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "My_first_project",
+          "currentEquation": "My_first_project"
+        }
+      ],
+      "partName": "My_first_project",
+      "sortDirection": "Left"
     }
   ],
   "allConnectors": [
@@ -379,6 +458,11 @@
       "ap2ID": "id-3554"
     },
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-3576",
+      "ap2ID": "id-3750"
+    },
+    {
       "ap2Name": "Shape 1",
       "ap1ID": "id-3733",
       "ap2ID": "id-3736"
@@ -392,6 +476,11 @@
       "ap2Name": "Shape 2",
       "ap1ID": "id-3741",
       "ap2ID": "id-3736"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-3750",
+      "ap2ID": "id-3757"
     }
   ],
   "unitsKey": "Inches",
