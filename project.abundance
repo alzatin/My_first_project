@@ -51,8 +51,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.34375,
-      "y": 0.19207317073170732,
+      "x": 0.2624555160142349,
+      "y": 0.14634146341463417,
       "uniqueID": "id-2869",
       "ioValues": [
         {
@@ -67,8 +67,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.5997983870967741,
-      "y": 0.23780487804878048,
+      "x": 0.4261565836298933,
+      "y": 0.21341463414634146,
       "uniqueID": "id-2873",
       "ioValues": [
         {
@@ -96,8 +96,8 @@
     },
     {
       "atomType": "Label",
-      "x": 0.6192170818505338,
-      "y": 0.4451219512195122,
+      "x": 0.5676156583629893,
+      "y": 0.34146341463414637,
       "uniqueID": "id-3358",
       "ioValues": [
         {
@@ -145,8 +145,8 @@
         },
         {
           "name": "Z",
-          "ioValue": -3,
-          "currentEquation": "-3"
+          "ioValue": -10,
+          "currentEquation": "-10"
         }
       ],
       "topLevel": false,
@@ -200,7 +200,7 @@
             },
             {
               "name": "z",
-              "ioValue": -3
+              "ioValue": -10
             }
           ],
           "interpreterVersion": 1,
@@ -261,8 +261,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.5409252669039146,
-      "y": 0.7134146341463415,
+      "x": 0.5382562277580071,
+      "y": 0.7347560975609756,
       "uniqueID": "id-3417",
       "name": "Dimension_Label",
       "ioValues": [
@@ -367,7 +367,7 @@
             },
             {
               "name": "text",
-              "ioValue": "Dist: 23.43",
+              "ioValue": "Dist: 29.15",
               "currentEquation": "label"
             },
             {
