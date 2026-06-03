@@ -27,8 +27,7 @@
     },
     {
       "name": "passes",
-      "ioValue": 3,
-      "currentEquation": "3"
+      "ioValue": 8
     }
   ],
   "topLevel": true,
@@ -106,13 +105,13 @@
     },
     {
       "atomType": "RegularPolygon",
-      "x": 0.15056818181818182,
-      "y": 0.5914634146341463,
+      "x": 0.15563198624247637,
+      "y": 0.6067073170731707,
       "uniqueID": "id-3546",
       "ioValues": [
         {
           "name": "number of sides",
-          "ioValue": 5
+          "ioValue": 6
         },
         {
           "name": "diameter",
@@ -227,8 +226,8 @@
     },
     {
       "atomType": "Tag",
-      "x": 0.40842648323301806,
-      "y": 0.625,
+      "x": 0.3834909716251075,
+      "y": 0.5884146341463414,
       "uniqueID": "id-3576",
       "name": "tag0",
       "ioValues": [
@@ -330,9 +329,92 @@
     },
     {
       "atomType": "CutLayout",
-      "x": 0.4883920894239037,
-      "y": 0.8780487804878049,
+      "x": 0.49527085124677556,
+      "y": 0.646341463414634,
       "uniqueID": "id-3750",
+      "name": "Cut Layout",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Sheet Width",
+          "ioValue": 95
+        },
+        {
+          "name": "Sheet Height",
+          "ioValue": 47
+        },
+        {
+          "name": "Part Padding",
+          "ioValue": -0.6
+        },
+        {
+          "name": "Orientations",
+          "ioValue": 12
+        }
+      ],
+      "placements": [
+        [
+          {
+            "id": 0,
+            "rotate": 0,
+            "translate": {
+              "x": 48,
+              "y": 24
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.6629406706792778,
+      "y": 0.6707317073170731,
+      "uniqueID": "id-3757",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Tool Size",
+          "ioValue": 0.25
+        },
+        {
+          "name": "Passes",
+          "ioValue": 8
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "My_first_project",
+          "currentEquation": "My_first_project"
+        }
+      ],
+      "partName": "My_first_project",
+      "sortDirection": "Left"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.4307692307692308,
+      "uniqueID": "id-3826",
+      "name": "passes"
+    },
+    {
+      "atomType": "CutLayout",
+      "x": 0.39208942390369733,
+      "y": 0.8323170731707318,
+      "uniqueID": "id-3897",
       "name": "Cut Layout",
       "ioValues": [
         {
@@ -360,10 +442,10 @@
         [
           {
             "id": 0,
-            "rotate": 0,
+            "rotate": 180,
             "translate": {
-              "x": 48,
-              "y": 24
+              "x": 5.400000000000001,
+              "y": 5.400000000000001
             }
           }
         ]
@@ -371,9 +453,9 @@
     },
     {
       "atomType": "Gcode",
-      "x": 0.6182287188306105,
+      "x": 0.6190885640584695,
       "y": 0.8628048780487805,
-      "uniqueID": "id-3757",
+      "uniqueID": "id-3904",
       "ioValues": [
         {
           "name": "geometry",
@@ -385,7 +467,7 @@
         },
         {
           "name": "Passes",
-          "ioValue": 3
+          "ioValue": 8
         },
         {
           "name": "Speed",
@@ -403,13 +485,6 @@
       ],
       "partName": "My_first_project",
       "sortDirection": "Left"
-    },
-    {
-      "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.4307692307692308,
-      "uniqueID": "id-3826",
-      "name": "passes"
     }
   ],
   "allConnectors": [
@@ -484,6 +559,11 @@
       "ap2ID": "id-3750"
     },
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-3658",
+      "ap2ID": "id-3897"
+    },
+    {
       "ap2Name": "Shape 1",
       "ap1ID": "id-3733",
       "ap2ID": "id-3736"
@@ -507,6 +587,16 @@
       "ap2Name": "Passes",
       "ap1ID": "id-3826",
       "ap2ID": "id-3757"
+    },
+    {
+      "ap2Name": "Passes",
+      "ap1ID": "id-3826",
+      "ap2ID": "id-3904"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-3897",
+      "ap2ID": "id-3904"
     }
   ],
   "unitsKey": "Inches",
