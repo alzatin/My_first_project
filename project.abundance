@@ -23,8 +23,12 @@
     },
     {
       "name": "thickness",
-      "ioValue": 0.75,
-      "currentEquation": ".75"
+      "ioValue": 0.75
+    },
+    {
+      "name": "passes",
+      "ioValue": 3,
+      "currentEquation": "3"
     }
   ],
   "topLevel": true,
@@ -108,7 +112,7 @@
       "ioValues": [
         {
           "name": "number of sides",
-          "ioValue": 6
+          "ioValue": 5
         },
         {
           "name": "diameter",
@@ -118,8 +122,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.33018056749785035,
-      "y": 0.573170731707317,
+      "x": 0.29406706792777304,
+      "y": 0.6128048780487805,
       "uniqueID": "id-3550",
       "ioValues": [
         {
@@ -309,8 +313,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 40,
-          "currentEquation": "40"
+          "ioValue": 40
         },
         {
           "name": "zDist",
@@ -321,14 +324,14 @@
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.5152439024390244,
+      "y": 0.3384615384615385,
       "uniqueID": "id-3747",
       "name": "thickness"
     },
     {
       "atomType": "CutLayout",
-      "x": 0.5141874462596733,
-      "y": 0.7835365853658537,
+      "x": 0.4883920894239037,
+      "y": 0.8780487804878049,
       "uniqueID": "id-3750",
       "name": "Cut Layout",
       "ioValues": [
@@ -353,12 +356,23 @@
           "ioValue": 12
         }
       ],
-      "placements": []
+      "placements": [
+        [
+          {
+            "id": 0,
+            "rotate": 0,
+            "translate": {
+              "x": 48,
+              "y": 24
+            }
+          }
+        ]
+      ]
     },
     {
       "atomType": "Gcode",
-      "x": 0.6113499570077386,
-      "y": 0.8567073170731707,
+      "x": 0.6182287188306105,
+      "y": 0.8628048780487805,
       "uniqueID": "id-3757",
       "ioValues": [
         {
@@ -371,7 +385,7 @@
         },
         {
           "name": "Passes",
-          "ioValue": 1
+          "ioValue": 3
         },
         {
           "name": "Speed",
@@ -389,6 +403,13 @@
       ],
       "partName": "My_first_project",
       "sortDirection": "Left"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.4307692307692308,
+      "uniqueID": "id-3826",
+      "name": "passes"
     }
   ],
   "allConnectors": [
@@ -480,6 +501,11 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "id-3750",
+      "ap2ID": "id-3757"
+    },
+    {
+      "ap2Name": "Passes",
+      "ap1ID": "id-3826",
       "ap2ID": "id-3757"
     }
   ],
