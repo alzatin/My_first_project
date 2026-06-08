@@ -102,8 +102,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.4522785898538263,
-      "y": 0.375,
+      "x": 0.3680137575236458,
+      "y": 0.38109756097560976,
       "uniqueID": "id-3989",
       "ioValues": [
         {
@@ -150,8 +150,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.77128116938951,
-      "y": 0.4420731707317073,
+      "x": 0.8306104901117799,
+      "y": 0.5640243902439024,
       "uniqueID": "id-4001",
       "ioValues": [
         {
@@ -206,7 +206,7 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.6715391229578676,
+      "x": 0.6328460877042132,
       "y": 0.22560975609756098,
       "uniqueID": "id-4064",
       "ioValues": [
@@ -232,13 +232,11 @@
         },
         {
           "name": "xDist",
-          "ioValue": -20,
-          "currentEquation": "-20"
+          "ioValue": -20
         },
         {
           "name": "yDist",
-          "ioValue": 20,
-          "currentEquation": "20"
+          "ioValue": 20
         },
         {
           "name": "zDist",
@@ -248,8 +246,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.5468615649183147,
-      "y": 0.20121951219512196,
+      "x": 0.48667239896818576,
+      "y": 0.18597560975609756,
       "uniqueID": "id-4111",
       "ioValues": [
         {
@@ -258,18 +256,39 @@
         },
         {
           "name": "xDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         },
         {
           "name": "yDist",
-          "ioValue": 40,
-          "currentEquation": "40"
+          "ioValue": 40
         },
         {
           "name": "zDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.7257093723129836,
+      "y": 0.38109756097560976,
+      "uniqueID": "id-4159",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 1
         }
       ]
     }
@@ -321,9 +340,9 @@
       "ap2ID": "id-4001"
     },
     {
-      "ap2Name": "Shape 3",
+      "ap2Name": "geometry",
       "ap1ID": "id-4064",
-      "ap2ID": "id-4001"
+      "ap2ID": "id-4159"
     },
     {
       "ap2Name": "Shape 2",
@@ -334,6 +353,11 @@
       "ap2Name": "Shape 1",
       "ap1ID": "id-4111",
       "ap2ID": "id-4064"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-4159",
+      "ap2ID": "id-4001"
     }
   ],
   "unitsKey": "Inches",
