@@ -206,8 +206,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.6328460877042132,
-      "y": 0.22560975609756098,
+      "x": 0.5967325881341359,
+      "y": 0.2225609756097561,
       "uniqueID": "id-4064",
       "ioValues": [
         {
@@ -246,8 +246,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.48667239896818576,
-      "y": 0.18597560975609756,
+      "x": 0.4376612209802236,
+      "y": 0.18292682926829268,
       "uniqueID": "id-4111",
       "ioValues": [
         {
@@ -260,7 +260,8 @@
         },
         {
           "name": "yDist",
-          "ioValue": 40
+          "ioValue": 45,
+          "currentEquation": "45"
         },
         {
           "name": "zDist",
@@ -270,8 +271,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.7257093723129836,
-      "y": 0.38109756097560976,
+      "x": 0.7351676698194325,
+      "y": 0.33231707317073167,
       "uniqueID": "id-4159",
       "ioValues": [
         {
@@ -284,11 +285,39 @@
         },
         {
           "name": "yDist",
-          "ioValue": 0
+          "ioValue": -5,
+          "currentEquation": "-5"
         },
         {
           "name": "zDist",
-          "ioValue": 1
+          "ioValue": 0,
+          "currentEquation": "0"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.4746345657781599,
+      "y": 0.46951219512195125,
+      "uniqueID": "id-4215",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 5,
+          "currentEquation": "5"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0,
+          "currentEquation": "0"
         }
       ]
     }
@@ -305,9 +334,9 @@
       "ap2ID": "id-4111"
     },
     {
-      "ap2Name": "Shape 2",
+      "ap2Name": "geometry",
       "ap1ID": "id-3989",
-      "ap2ID": "id-4064"
+      "ap2ID": "id-4215"
     },
     {
       "ap2Name": "geometry",
@@ -358,6 +387,11 @@
       "ap2Name": "Shape 3",
       "ap1ID": "id-4159",
       "ap2ID": "id-4001"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-4215",
+      "ap2ID": "id-4064"
     }
   ],
   "unitsKey": "Inches",
