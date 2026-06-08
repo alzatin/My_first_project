@@ -124,8 +124,7 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 10,
-          "currentEquation": "10"
+          "ioValue": 10
         },
         {
           "name": "y length",
@@ -167,8 +166,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.6208082545141874,
-      "y": 0.7195121951219512,
+      "x": 0.532244196044712,
+      "y": 0.7103658536585366,
       "uniqueID": "id-4029",
       "ioValues": [
         {
@@ -188,6 +187,30 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.650042992261393,
+      "y": 0.8323170731707318,
+      "uniqueID": "id-4061",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.6079105760963026,
+      "y": 0.1646341463414634,
+      "uniqueID": "id-4064",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -199,7 +222,7 @@
     {
       "ap2Name": "Shape 1",
       "ap1ID": "id-3989",
-      "ap2ID": "id-4001"
+      "ap2ID": "id-4064"
     },
     {
       "ap2Name": "geometry",
@@ -217,8 +240,18 @@
       "ap2ID": "id-2"
     },
     {
-      "ap2Name": "Shape 2",
+      "ap2Name": "Shape 1",
       "ap1ID": "id-4029",
+      "ap2ID": "id-4061"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-4061",
+      "ap2ID": "id-4001"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-4064",
       "ap2ID": "id-4001"
     }
   ],
