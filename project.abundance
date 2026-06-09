@@ -46,8 +46,8 @@
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.15384615384615385,
+      "x": 0.021449999999999997,
+      "y": 0.13,
       "uniqueID": "id-2574",
       "name": "AA",
       "type": "point3d",
@@ -59,8 +59,8 @@
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.24615384615384617,
+      "x": 0.021449999999999997,
+      "y": 0.20800000000000002,
       "uniqueID": "id-2953",
       "name": "AB",
       "type": "point3d",
@@ -72,15 +72,15 @@
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.3384615384615385,
+      "x": 0.021449999999999997,
+      "y": 0.28600000000000003,
       "uniqueID": "id-3747",
       "name": "thickness"
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.4307692307692308,
+      "x": 0.021449999999999997,
+      "y": 0.36400000000000005,
       "uniqueID": "id-3826",
       "name": "passes"
     },
@@ -150,8 +150,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.8306104901117799,
-      "y": 0.5640243902439024,
+      "x": 0.7690140845070422,
+      "y": 0.8417910447761194,
       "uniqueID": "id-4001",
       "ioValues": [
         {
@@ -190,8 +190,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.70335339638865,
-      "y": 0.6524390243902439,
+      "x": 0.7098591549295774,
+      "y": 0.6626865671641792,
       "uniqueID": "id-4061",
       "ioValues": [
         {
@@ -270,8 +270,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.7308684436801376,
-      "y": 0.2865853658536585,
+      "x": 0.6704225352112676,
+      "y": 0.42388059701492536,
       "uniqueID": "id-4159",
       "ioValues": [
         {
@@ -328,8 +328,7 @@
         },
         {
           "name": "x-axis degrees",
-          "ioValue": 90,
-          "currentEquation": "90"
+          "ioValue": 90
         },
         {
           "name": "y-axis degrees",
@@ -343,8 +342,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.1461736887360275,
-      "y": 0.8292682926829269,
+      "x": 0.15023474178403756,
+      "y": 0.8,
       "uniqueID": "id-4273",
       "name": "Molecule",
       "topLevel": false,
@@ -430,13 +429,11 @@
             },
             {
               "name": "xDist",
-              "ioValue": 1,
-              "currentEquation": "1"
+              "ioValue": 1
             },
             {
               "name": "yDist",
-              "ioValue": 1,
-              "currentEquation": "1"
+              "ioValue": 1
             },
             {
               "name": "zDist",
@@ -661,6 +658,477 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.7868544600938968,
+      "y": 0.30149253731343284,
+      "uniqueID": "id-4701",
+      "name": "Molecule",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-4703",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.29671361502347415,
+          "y": 0.6567164179104478,
+          "uniqueID": "id-4720",
+          "name": "-6-Wood-Screw-inches",
+          "ioValues": [
+            {
+              "name": "Length",
+              "ioValue": 0.5
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-4710",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.20153714773697695,
+              "y": 0.6987577639751553,
+              "uniqueID": "id-4711",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 0.15625,
+                  "currentEquation": "5/32"
+                }
+              ]
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.1861656703672075,
+              "y": 0.38819875776397517,
+              "uniqueID": "id-4712",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 0.28125,
+                  "currentEquation": "9/32"
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.3432963279248506,
+              "y": 0.7018633540372671,
+              "uniqueID": "id-4713",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": -0.1
+                }
+              ]
+            },
+            {
+              "atomType": "Loft",
+              "x": 0.4227156276686593,
+              "y": 0.2857142857142857,
+              "uniqueID": "id-4714",
+              "ioValues": [
+                {
+                  "name": "Shape 1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape 2",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape 3",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape 1",
+                  "ioValue": {
+                    "geometry": "move-circle-0.078125-0-0-0",
+                    "dimension": "2D",
+                    "tags": [],
+                    "plane": {
+                      "origin": [
+                        0,
+                        0,
+                        -0.1
+                      ],
+                      "xDir": [
+                        1,
+                        0,
+                        0
+                      ],
+                      "normal": [
+                        0,
+                        0,
+                        1
+                      ]
+                    },
+                    "color": "#aad7f2",
+                    "bom": []
+                  }
+                },
+                {
+                  "name": "Shape 2",
+                  "ioValue": {
+                    "geometry": "circle-0.140625",
+                    "dimension": "2D",
+                    "tags": [],
+                    "plane": {
+                      "origin": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "xDir": [
+                        1,
+                        0,
+                        0
+                      ],
+                      "normal": [
+                        0,
+                        0,
+                        1
+                      ]
+                    },
+                    "color": "#aad7f2",
+                    "bom": []
+                  }
+                },
+                {
+                  "name": "Shape 3",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "closedSelection": 0
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.49274124679760883,
+              "y": 0.6583850931677019,
+              "uniqueID": "id-4715",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": -0.5,
+                  "currentEquation": "-Length"
+                }
+              ]
+            },
+            {
+              "atomType": "Assembly",
+              "x": 0.6147426981919333,
+              "y": 0.3385093167701863,
+              "uniqueID": "id-4716",
+              "name": "Fusion",
+              "ioValues": [
+                {
+                  "name": "Shape 1",
+                  "ioValue": null
+                },
+                {
+                  "name": "Shape 2",
+                  "ioValue": null
+                }
+              ],
+              "unionType": "Assembly",
+              "unionIndex": 1
+            },
+            {
+              "atomType": "Add-BOM-Tag",
+              "x": 0.7143894107600341,
+              "y": 0.2605590062111801,
+              "uniqueID": "id-4717",
+              "name": "Add BOM Tag",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Item Name",
+                  "ioValue": "#6 Screw",
+                  "currentEquation": "#6 Screw"
+                },
+                {
+                  "name": "Number Needed",
+                  "ioValue": 1
+                },
+                {
+                  "name": "Cost (USD)",
+                  "ioValue": 0
+                },
+                {
+                  "name": "Source Link",
+                  "ioValue": ""
+                }
+              ],
+              "BOMitem": {
+                "BOMitemName": "#6 Screw",
+                "numberNeeded": 1,
+                "costUSD": 0,
+                "source": ""
+              }
+            },
+            {
+              "atomType": "Color",
+              "x": 0.819193324061196,
+              "y": 0.40062111801242234,
+              "uniqueID": "id-4718",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "selectedColor": "Mauve "
+            },
+            {
+              "atomType": "Input",
+              "x": 0.021449999999999997,
+              "y": 0.13,
+              "uniqueID": "id-4719",
+              "name": "Length"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4711",
+              "ap2ID": "id-4713"
+            },
+            {
+              "ap2Name": "Shape 2",
+              "ap1ID": "id-4712",
+              "ap2ID": "id-4714"
+            },
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-4713",
+              "ap2ID": "id-4714"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4713",
+              "ap2ID": "id-4715"
+            },
+            {
+              "ap2Name": "Shape 2",
+              "ap1ID": "id-4714",
+              "ap2ID": "id-4716"
+            },
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-4715",
+              "ap2ID": "id-4716"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4716",
+              "ap2ID": "id-4717"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4717",
+              "ap2ID": "id-4718"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-4718",
+              "ap2ID": "id-4710"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-06-09T10:23:39.075Z",
+            "privateRepo": false,
+            "repoName": "-6-Wood-Screw-inches",
+            "dateCreated": "2025-06-27T21:18:08Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/alzatin/-6-Wood-Screw-inches/master/README.md?sanitize=true",
+            "yyyy": 2025,
+            "topMoleculeID": "cf7ebb22-6d20-4eac-82e3-ec22eee90a58",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/alzatin/-6-Wood-Screw-inches",
+            "topics": [
+              "hardware",
+              "wood",
+              "screw"
+            ],
+            "parentRepo": null,
+            "forks": 0,
+            "dateModified": "739713",
+            "ranking": 2.4,
+            "searchField": "-6-wood-screw-inches alzatin  hardware wood screw",
+            "owner": "alzatin",
+            "description": "",
+            "contentURL": "https://raw.githubusercontent.com/alzatin/-6-Wood-Screw-inches/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/alzatin/-6-Wood-Screw-inches/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "Inches",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1781017558134
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.2488262910798122,
+          "y": 0.38805970149253727,
+          "uniqueID": "id-4755",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 10
+            },
+            {
+              "name": "y length",
+              "ioValue": 10
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.4103286384976526,
+          "y": 0.39104477611940297,
+          "uniqueID": "id-4759",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 1,
+              "currentEquation": "1"
+            }
+          ]
+        },
+        {
+          "atomType": "Tag",
+          "x": 0.5877934272300469,
+          "y": 0.4626865671641791,
+          "uniqueID": "id-4763",
+          "name": "Plastic",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tags": [
+            "Plastic"
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.504225352112676,
+          "y": 0.7432835820895521,
+          "uniqueID": "id-4766",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 1,
+              "currentEquation": "1"
+            }
+          ]
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.7352112676056338,
+          "y": 0.5164179104477612,
+          "uniqueID": "id-4772",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4720",
+          "ap2ID": "id-4766"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4755",
+          "ap2ID": "id-4759"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4759",
+          "ap2ID": "id-4763"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-4763",
+          "ap2ID": "id-4772"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-4766",
+          "ap2ID": "id-4772"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-4772",
+          "ap2ID": "id-4703"
+        }
+      ],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
@@ -693,11 +1161,6 @@
       "ap2Name": "geometry",
       "ap1ID": "id-3997",
       "ap2ID": "id-4103"
-    },
-    {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-4001",
-      "ap2ID": "id-2"
     },
     {
       "ap2Name": "Shape 1",
@@ -738,6 +1201,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-4439",
       "ap2ID": "id-4111"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-4701",
+      "ap2ID": "id-2"
     }
   ],
   "unitsKey": "Inches",
