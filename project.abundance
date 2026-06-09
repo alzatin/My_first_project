@@ -661,8 +661,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.7868544600938968,
-      "y": 0.30149253731343284,
+      "x": 0.7859154929577465,
+      "y": 0.31044776119402984,
       "uniqueID": "id-4701",
       "name": "Molecule",
       "topLevel": false,
@@ -1040,8 +1040,8 @@
         },
         {
           "atomType": "Tag",
-          "x": 0.5877934272300469,
-          "y": 0.4626865671641791,
+          "x": 0.5859154929577465,
+          "y": 0.34328358208955223,
           "uniqueID": "id-4763",
           "name": "Plastic",
           "ioValues": [
@@ -1081,8 +1081,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.7352112676056338,
-          "y": 0.5164179104477612,
+          "x": 0.7361502347417841,
+          "y": 0.5014925373134328,
           "uniqueID": "id-4772",
           "ioValues": [
             {
@@ -1094,6 +1094,21 @@
               "ioValue": null
             }
           ]
+        },
+        {
+          "atomType": "ExtractTag",
+          "x": 0.711737089201878,
+          "y": 0.791044776119403,
+          "uniqueID": "id-4777",
+          "name": "Extract Plastic",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tag": "Plastic",
+          "tagIndex": 0
         }
       ],
       "allConnectors": [
@@ -1126,6 +1141,11 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-4772",
           "ap2ID": "id-4703"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4772",
+          "ap2ID": "id-4777"
         }
       ],
       "fileTypeVersion": 1
