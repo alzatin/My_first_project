@@ -661,8 +661,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.7896713615023474,
-      "y": 0.29850746268656714,
+      "x": 0.7887323943661972,
+      "y": 0.27164179104477615,
       "uniqueID": "id-4701",
       "name": "Molecule",
       "topLevel": false,
@@ -1040,8 +1040,8 @@
         },
         {
           "atomType": "Tag",
-          "x": 0.5436619718309859,
-          "y": 0.3074626865671642,
+          "x": 0.5568075117370892,
+          "y": 0.4895522388059702,
           "uniqueID": "id-4763",
           "name": "Plastic",
           "ioValues": [
@@ -1056,8 +1056,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.4028169014084507,
-          "y": 0.8029850746268657,
+          "x": 0.4065727699530517,
+          "y": 0.8179104477611941,
           "uniqueID": "id-4766",
           "ioValues": [
             {
@@ -1070,7 +1070,8 @@
             },
             {
               "name": "yDist",
-              "ioValue": 0
+              "ioValue": 4,
+              "currentEquation": "4"
             },
             {
               "name": "zDist",
@@ -1081,8 +1082,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.7220657276995306,
-          "y": 0.5402985074626866,
+          "x": 0.6995305164319249,
+          "y": 0.6507462686567164,
           "uniqueID": "id-4772",
           "ioValues": [
             {
@@ -1097,8 +1098,8 @@
         },
         {
           "atomType": "ExtractTag",
-          "x": 0.7971830985915492,
-          "y": 0.7582089552238805,
+          "x": 0.8281690140845072,
+          "y": 0.7731343283582089,
           "uniqueID": "id-4777",
           "name": "Extract Plastic",
           "ioValues": [
@@ -1112,8 +1113,8 @@
         },
         {
           "atomType": "Tag",
-          "x": 0.5615023474178403,
-          "y": 0.8208955223880596,
+          "x": 0.5661971830985916,
+          "y": 0.8417910447761194,
           "uniqueID": "id-4781",
           "name": "screw",
           "ioValues": [
@@ -1124,6 +1125,51 @@
           ],
           "tags": [
             "screw"
+          ]
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.844131455399061,
+          "y": 0.4626865671641791,
+          "uniqueID": "id-4790",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.6309859154929577,
+          "y": 0.24776119402985078,
+          "uniqueID": "id-4794",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 2,
+              "currentEquation": "2"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.7502347417840376,
+          "y": 0.35820895522388063,
+          "uniqueID": "id-4797",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 10
+            }
           ]
         }
       ],
@@ -1154,27 +1200,42 @@
           "ap2ID": "id-4781"
         },
         {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-4772",
-          "ap2ID": "id-4703"
-        },
-        {
           "ap2Name": "geometry",
           "ap1ID": "id-4772",
           "ap2ID": "id-4777"
         },
         {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-4772",
+          "ap2ID": "id-4790"
+        },
+        {
           "ap2Name": "Shape 2",
           "ap1ID": "id-4781",
           "ap2ID": "id-4772"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-4790",
+          "ap2ID": "id-4703"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4794",
+          "ap2ID": "id-4797"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-4797",
+          "ap2ID": "id-4790"
         }
       ],
       "fileTypeVersion": 1
     },
     {
       "atomType": "Rotate",
-      "x": 0.8572769953051643,
-      "y": 0.5223880597014925,
+      "x": 0.8582159624413146,
+      "y": 0.582089552238806,
       "uniqueID": "id-4784",
       "ioValues": [
         {
@@ -1187,7 +1248,8 @@
         },
         {
           "name": "y-axis degrees",
-          "ioValue": 0
+          "ioValue": 40,
+          "currentEquation": "40"
         },
         {
           "name": "z-axis degrees",
@@ -1268,11 +1330,15 @@
       "ap2ID": "id-4111"
     },
     {
-      "ap2Name": "number or geometry",
+      "ap2Name": "geometry",
       "ap1ID": "id-4701",
-      "ap2ID": "id-2"
+      "ap2ID": "id-4784"
     },
-    null
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-4784",
+      "ap2ID": "id-2"
+    }
   ],
   "unitsKey": "Inches",
   "fileTypeVersion": 1,
