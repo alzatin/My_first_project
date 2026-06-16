@@ -46,8 +46,8 @@
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.15384615384615385,
+      "x": 0.021449999999999997,
+      "y": 0.13,
       "uniqueID": "id-2574",
       "name": "AA",
       "type": "point3d",
@@ -59,8 +59,8 @@
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.24615384615384617,
+      "x": 0.021449999999999997,
+      "y": 0.20800000000000002,
       "uniqueID": "id-2953",
       "name": "AB",
       "type": "point3d",
@@ -72,49 +72,17 @@
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.3384615384615385,
+      "x": 0.021449999999999997,
+      "y": 0.28600000000000003,
       "uniqueID": "id-3747",
       "name": "thickness"
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.4307692307692308,
+      "x": 0.021449999999999997,
+      "y": 0.36400000000000005,
       "uniqueID": "id-3826",
       "name": "passes"
-    },
-    {
-      "atomType": "Rectangle",
-      "x": 0.14022140221402213,
-      "y": 0.5213414634146342,
-      "uniqueID": "id-3985",
-      "ioValues": [
-        {
-          "name": "x length",
-          "ioValue": 50
-        },
-        {
-          "name": "y length",
-          "ioValue": 10
-        }
-      ]
-    },
-    {
-      "atomType": "Extrude",
-      "x": 0.27306273062730624,
-      "y": 0.4207317073170732,
-      "uniqueID": "id-3989",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "height",
-          "ioValue": 10
-        }
-      ]
     },
     {
       "atomType": "Rectangle",
@@ -1108,8 +1076,8 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.021449999999999997,
+              "y": 0.13,
               "uniqueID": "id-4719",
               "name": "Length"
             }
@@ -1251,24 +1219,76 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.25863596102745795,
+      "y": 0.4208955223880597,
+      "uniqueID": "id-4987",
+      "name": "New Molecule",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-4989",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.17803365810451727,
+          "y": 0.6537313432835821,
+          "uniqueID": "id-4991",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 50
+            },
+            {
+              "name": "y length",
+              "ioValue": 10
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.38263950398582813,
+          "y": 0.25970149253731345,
+          "uniqueID": "id-4992",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 10
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4991",
+          "ap2ID": "id-4992"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-4991",
+          "ap2ID": "id-4989"
+        }
+      ],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-3985",
-      "ap2ID": "id-3989"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-3989",
-      "ap2ID": "id-4215"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-3989",
-      "ap2ID": "id-4439"
-    },
     {
       "ap2Name": "geometry",
       "ap1ID": "id-3993",
