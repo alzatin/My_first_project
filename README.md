@@ -4,14 +4,6 @@
 
 ![](/project.svg)
 
-## Inputs
-
-- **AA** (point3d)
-- **AB** (point3d)
-- **thickness** (number)
-- **passes** (number)
-
-
 
 
  
